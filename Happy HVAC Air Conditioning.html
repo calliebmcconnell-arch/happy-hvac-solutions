@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Conditioning Services in Atlanta &amp; North Georgia | Happy HVAC Solutions</title>
+<meta name="description" content="AC repair, installation, maintenance, mini-split & duct services across Atlanta and North Georgia. Family-owned, licensed & insured, available 24/7. Call 770-364-5141.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://happyhvacsolutions.com/air-conditioning-solutions/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #F26B1F;
+    --orange-dark: #D9551A;
+    --orange-light: #FFF1E6;
+    --pink: #E91E63;
+    --pink-dark: #C2185B;
+    --magenta: #FF2D87;
+    --yellow: #FFC93C;
+    --sky: #29B6F6;
+    --sky-dark: #0288D1;
+    --blue: #243B6B;
+    --blue-dark: #1A2C53;
+    --blue-light: #EEF3FB;
+    --white: #FFFFFF;
+    --off-white: #FFF9F2;
+    --gray-100: #F4EFE8;
+    --gray-200: #E5DED3;
+    --gray-400: #9B9890;
+    --gray-600: #5C5A55;
+    --gray-900: #1F2A44;
+    --tiedye: linear-gradient(135deg, #FFC93C 0%, #F26B1F 25%, #E91E63 55%, #FF2D87 75%, #29B6F6 100%);
+    --tiedye-soft: linear-gradient(135deg, #FFE9B8 0%, #FFD0A8 30%, #FFC2D8 60%, #C8ECFB 100%);
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+    --max-w: 1200px;
+    --radius: 4px;
+    --radius-lg: 8px;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    color: var(--gray-900);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    background: var(--blue);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 8px 0;
+  }
+  .topbar .container { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .topbar-left { display: flex; gap: 24px; flex-wrap: wrap; }
+  .topbar-item { display: inline-flex; align-items: center; gap: 6px; }
+  .topbar-right a { font-weight: 600; }
+  .topbar-right a:hover { color: var(--orange); }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .header-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    min-height: 120px; padding: 14px 0; gap: 24px;
+  }
+  .logo { display: flex; align-items: center; }
+  .logo img { height: 104px; width: 104px; object-fit: contain; display: block; }
+
+  nav { display: flex; align-items: center; gap: 4px; }
+  nav a {
+    padding: 10px 14px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--gray-900);
+    transition: color 0.15s;
+  }
+  nav a:hover { color: var(--orange); }
+  nav a.active { color: var(--orange); }
+  nav a.nav-cta {
+    background: var(--orange); color: var(--white);
+    padding: 12px 18px; border-radius: var(--radius);
+    margin-left: 8px; transition: background 0.2s;
+  }
+  nav a.nav-cta:hover { background: var(--orange-dark); color: var(--white); }
+  nav a.nav-cta-club {
+    position: relative; background: var(--tiedye); color: var(--white);
+    font-family: var(--font-display); font-size: 13px; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 12px 18px 12px 36px; border-radius: var(--radius); margin-left: 4px;
+    box-shadow: 0 6px 18px rgba(242,107,31,0.3); transition: transform 0.2s, box-shadow 0.2s;
+  }
+  nav a.nav-cta-club::before {
+    content: "★"; position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    font-size: 14px; color: #FFE08A; text-shadow: 0 0 6px rgba(255,224,138,0.7);
+  }
+  nav a.nav-cta-club:hover, nav a.nav-cta-club:focus, nav a.nav-cta-club:focus-visible { transform: translateY(-1px); box-shadow: 0 10px 22px rgba(242,107,31,0.4); color: var(--white) !important; background: var(--tiedye) !important; filter: brightness(1.06) saturate(1.05); }
+  nav a.nav-cta-club:active { transform: translateY(0); filter: brightness(0.98); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: 11px; }
+  .dropdown-menu {
+    display: none; position: absolute; top: 100%; left: 0;
+    background: var(--white); min-width: 220px;
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    z-index: 200; padding: 8px 0;
+  }
+  .nav-dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu a { display: block; padding: 10px 16px; font-size: 14px; }
+  .dropdown-menu a:hover { background: var(--off-white); color: var(--orange); }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 14px 26px;
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 16px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    border-radius: var(--radius); border: 2px solid transparent;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .btn-primary { background: var(--orange); color: var(--white); }
+  .btn-primary:hover { background: var(--orange-dark); }
+  .btn-secondary { background: transparent; color: var(--white); border-color: var(--white); }
+  .btn-secondary:hover { background: var(--white); color: var(--blue); }
+
+  /* ── PAGE HERO ── */
+  .page-hero {
+    position: relative;
+    color: var(--white);
+    overflow: hidden;
+    padding: 88px 0 96px;
+    background: var(--blue-dark);
+  }
+  .page-hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 100% 0%, rgba(41,182,246,0.28) 0%, transparent 60%),
+      radial-gradient(ellipse at 0% 100%, rgba(233,30,99,0.22) 0%, transparent 55%),
+      radial-gradient(ellipse at 50% 50%, rgba(255,201,60,0.10) 0%, transparent 70%);
+  }
+  .page-hero::after {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 0;
+    height: 4px; background: var(--tiedye);
+  }
+  .page-hero .container { position: relative; z-index: 1; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .hero-image {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.45);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-image::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0;
+    height: 4px; background: var(--tiedye); z-index: 2;
+  }
+  .hero-image-tag {
+    position: absolute;
+    bottom: 18px; left: 18px; right: 18px;
+    z-index: 2;
+    background: rgba(31,42,68,0.78);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 12px 16px;
+    border-radius: var(--radius);
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 13px;
+    color: var(--white);
+    display: flex; align-items: center; gap: 10px;
+    margin: 0;
+  }
+  .hero-image-tag::before {
+    content: ""; width: 22px; height: 2px;
+    background: var(--tiedye); border-radius: 2px;
+  }
+  @media (max-width: 1000px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+    .hero-image { max-width: 520px; aspect-ratio: 4/3; margin: 0 auto; }
+  }
+  .crumbs {
+    font-family: var(--font-display);
+    text-transform: uppercase; font-size: 13px; letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.7); margin-bottom: 18px;
+  }
+  .crumbs a { color: rgba(255,255,255,0.85); }
+  .crumbs a:hover { color: var(--yellow); }
+  .crumbs span { margin: 0 8px; opacity: 0.5; }
+  .page-hero h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    max-width: 880px;
+  }
+  .page-hero h1 em {
+    font-style: normal;
+    background: var(--tiedye);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .page-hero p.lead {
+    font-size: clamp(17px, 1.6vw, 20px);
+    line-height: 1.55;
+    color: rgba(255,255,255,0.86);
+    max-width: 720px;
+    margin-bottom: 24px;
+  }
+  .page-hero-services {
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+  }
+  .page-hero-services strong { color: var(--white); margin-right: 8px; letter-spacing: 0.1em; font-weight: 700; }
+  .page-hero-services span { display: inline-block; margin: 0 6px; opacity: 0.5; }
+  .page-hero-actions {
+    display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px;
+  }
+  .page-hero-meta {
+    display: flex; gap: 28px; flex-wrap: wrap;
+    margin-top: 32px; padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+  }
+  .meta-item {
+    font-family: var(--font-display);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 13px; color: rgba(255,255,255,0.85);
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .meta-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--tiedye); }
+
+  /* ── SECTION SHARED ── */
+  section { padding: 96px 0; }
+  .section-label {
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 13px;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    background: var(--tiedye);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-bottom: 14px;
+  }
+  .section-label::before {
+    content: ""; width: 22px; height: 2px;
+    background: var(--tiedye); border-radius: 2px;
+  }
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(34px, 4.6vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+  h2 em {
+    font-style: normal;
+    background: var(--tiedye);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(26px, 3vw, 34px);
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+    text-transform: uppercase;
+  }
+  h3 em {
+    font-style: normal;
+    background: var(--tiedye);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+
+  /* ── INTRO BAND ── */
+  .intro { background: var(--white); }
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .intro-eyebrow {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px; letter-spacing: 0.18em;
+    color: var(--orange);
+    margin-bottom: 12px;
+  }
+  .intro-grid h2 { margin-bottom: 24px; }
+  .intro-copy p {
+    font-size: 17px; color: var(--gray-600);
+    line-height: 1.7; margin-bottom: 18px;
+  }
+  .intro-copy p strong { color: var(--gray-900); font-weight: 600; }
+
+  /* ── SERVICES LIST (residential offerings) ── */
+  .services-band { background: var(--off-white); position: relative; overflow: hidden; }
+  .services-band::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: var(--tiedye);
+  }
+  .services-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .services-header h2 { margin-bottom: 14px; }
+  .services-header p {
+    max-width: 640px; margin: 0 auto;
+    font-size: 17px; color: var(--gray-600); line-height: 1.65;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  .service-pill {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 22px 22px 22px 60px;
+    position: relative;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--gray-900);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    line-height: 1.2;
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+  }
+  .service-pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(31,42,68,0.10);
+    border-color: var(--orange);
+  }
+  .service-pill::before {
+    content: "";
+    position: absolute;
+    left: 18px; top: 50%;
+    transform: translateY(-50%);
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: var(--tiedye);
+  }
+  .service-pill::after {
+    content: "";
+    position: absolute;
+    left: 26px; top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px; height: 14px;
+    border-right: 2.5px solid var(--white);
+    border-bottom: 2.5px solid var(--white);
+    margin-top: -2px;
+  }
+
+  /* ── INSTALL FEATURE (image + copy) ── */
+  .install-feature { background: var(--white); }
+  .install-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .install-image {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    box-shadow: 0 24px 60px rgba(31,42,68,0.22);
+  }
+  .install-image img { width: 100%; height: 100%; object-fit: cover; }
+  .install-image::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0;
+    height: 4px; background: var(--tiedye); z-index: 2;
+  }
+  .install-copy h3 { margin-bottom: 22px; }
+  .install-copy p {
+    font-size: 17px; color: var(--gray-600);
+    line-height: 1.7; margin-bottom: 18px;
+  }
+  .install-copy p a {
+    color: var(--orange);
+    border-bottom: 1px solid currentColor;
+    font-weight: 600;
+  }
+  .install-copy p a:hover { color: var(--orange-dark); }
+  .install-bullets {
+    list-style: none;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .install-bullets li {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 15.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-left: 28px;
+    position: relative;
+    color: var(--gray-900);
+    line-height: 1.35;
+  }
+  .install-bullets li::before {
+    content: "";
+    position: absolute; left: 0; top: 4px;
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: var(--tiedye);
+  }
+  .install-bullets li::after {
+    content: "";
+    position: absolute; left: 4px; top: 7px;
+    width: 5px; height: 9px;
+    border-right: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    transform: rotate(45deg);
+  }
+
+  /* ── BADGE STRIP ── */
+  .badges {
+    background: var(--blue-dark);
+    color: var(--white);
+    padding: 56px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .badges::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0;
+    height: 4px; background: var(--tiedye);
+  }
+  .badges::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 80% 50%, rgba(41,182,246,0.18) 0%, transparent 60%);
+  }
+  .badges .container { position: relative; z-index: 1; }
+  .badges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+  }
+  .badge-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 24px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: var(--radius-lg);
+  }
+  .badge-icon {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: var(--tiedye);
+    color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .badge-text {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.15;
+  }
+  .badge-text small {
+    display: block;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0;
+    color: rgba(255,255,255,0.78);
+    margin-top: 4px;
+  }
+
+  /* ── EMERGENCY BAND (the "Need help?" callout) ── */
+  .emergency {
+    background: var(--off-white);
+    text-align: center;
+  }
+  .emergency h2 { margin-bottom: 16px; max-width: 880px; margin-left: auto; margin-right: auto; }
+  .emergency p {
+    color: var(--gray-600);
+    font-size: 18px;
+    margin-bottom: 26px;
+    max-width: 660px;
+    margin-left: auto; margin-right: auto;
+    line-height: 1.6;
+  }
+  .emergency-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-blue { background: var(--blue); color: var(--white); }
+  .btn-blue:hover { background: var(--blue-dark); }
+
+  /* ── CTA BANNER ── */
+  .cta-banner {
+    background: var(--blue-dark);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    padding: 88px 0;
+  }
+  .cta-banner::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(255,201,60,0.18) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 50%, rgba(233,30,99,0.25) 0%, transparent 55%);
+  }
+  .cta-banner::after {
+    content: ""; position: absolute; left: 0; right: 0; top: 0;
+    height: 4px; background: var(--tiedye);
+  }
+  .cta-banner .container { position: relative; z-index: 1; text-align: center; }
+  .cta-banner h2 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    margin-bottom: 18px; color: var(--white);
+  }
+  .cta-banner h2 em {
+    background: var(--tiedye);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .cta-banner p {
+    font-size: 18px; color: rgba(255,255,255,0.85);
+    margin-bottom: 32px; max-width: 620px;
+    margin-left: auto; margin-right: auto;
+  }
+  .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--blue-dark);
+    color: rgba(255,255,255,0.75);
+    padding: 64px 0 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .footer-brand img { width: 220px; height: auto; max-height: 140px; object-fit: contain; margin-bottom: 16px; display: block; }
+  .footer-brand p { font-size: 14px; line-height: 1.65; margin-bottom: 20px; }
+  .footer-contact-item {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 8px; font-size: 14px;
+  }
+  .footer-contact-item a:hover { color: var(--orange); }
+  .footer-social { display: flex; gap: 10px; margin-top: 18px; }
+  .footer-social a {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.85);
+    transition: background 0.2s, color 0.2s, transform 0.2s, border-color 0.2s;
+  }
+  .footer-social a:hover {
+    background: var(--orange, #F97316);
+    border-color: var(--orange, #F97316);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .footer-col h4 {
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 14px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--white); margin-bottom: 16px;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 8px; font-size: 14px; }
+  .footer-col a:hover { color: var(--orange); }
+  .footer-bottom {
+    padding: 20px 0;
+    display: flex; justify-content: space-between;
+    flex-wrap: wrap; gap: 16px; font-size: 13px;
+  }
+  .footer-bottom-links { display: flex; gap: 20px; }
+
+  /* ── MOBILE ── */
+  @media (max-width: 1100px) {
+    .services-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 1200px) {
+    nav a { padding: 6px 8px; font-size: 13px; }
+    nav a.nav-cta-club { padding: 8px 14px 8px 30px !important; font-size: 12px; }
+    nav a.nav-cta { padding: 8px 14px !important; font-size: 12.5px; }
+  }
+  @media (max-width: 1024px) {
+    nav { gap: 2px; }
+    nav a { padding: 6px 7px; font-size: 12.5px; }
+    nav a.nav-cta-club::before { left: 10px; font-size: 12px; }
+    nav a.nav-cta-club { padding: 7px 12px 7px 26px !important; font-size: 11.5px; letter-spacing: 0.04em; }
+    nav a.nav-cta { padding: 7px 12px !important; font-size: 12px; }
+    .header-inner { gap: 16px; }
+    .logo img { height: 84px; width: 84px; }
+  }
+  @media (max-width: 760px) {
+    nav { display: none; }
+  }
+  @media (max-width: 1000px) {
+    .intro-grid { grid-template-columns: 1fr; gap: 36px; }
+    .install-grid { grid-template-columns: 1fr; gap: 48px; }
+    .install-image { aspect-ratio: 4/3; max-width: 560px; margin: 0 auto; }
+    .badges-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 720px) {
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .install-bullets { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .topbar-left { gap: 14px; }
+    .topbar-item:nth-child(2) { display: none; }
+    .header-inner { min-height: 88px; }
+    .logo img { height: 72px; width: 72px; }
+    section { padding: 72px 0; }
+    .page-hero { padding: 64px 0 72px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="topbar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Open 24/7 for Emergencies
+      </span>
+      <span class="topbar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Serving Atlanta &amp; North Georgia
+      </span>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:7703645141">Call 770-364-5141</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="Happy HVAC Homepage.html" class="logo" aria-label="Happy HVAC Solutions Home">
+        <img src="assets/happy-hvac-logo.png" alt="Happy HVAC Solutions logo" width="104" height="104">
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="Happy HVAC Air Conditioning.html" class="active">Air Conditioning</a>
+        <a href="/heating-solutions/">Heating</a>
+        <a href="/indoor-air-quality-solutions/">Indoor Air Quality</a>
+        <a href="Happy HVAC Testimonials.html">Reviews</a>
+        <a href="Happy HVAC About.html">About</a>
+        <div class="nav-dropdown">
+          <a href="#">More Services</a>
+          <div class="dropdown-menu">
+            <a href="/plumbing-solutions/">Plumbing</a>
+            <a href="/electrical-solutions/">Electrical</a>
+            <a href="/commercial-hvac-r-in-atlanta-north-georgia/">Commercial HVAC-R</a>
+            <a href="/restaurant-refrigeration-services/">Restaurant &amp; Refrigeration</a>
+            <a href="/water-heater/">Water Heater</a>
+            <a href="/duct-work/">Duct Work</a>
+            <a href="/hvac-r-design-installation/">HVAC-R Design &amp; Installation</a>
+            <a href="/smart-home-technology/">Smart Home Technology</a>
+            <a href="/financing-options/">Financing Options</a>
+          </div>
+        </div>
+        <a href="Happy HVAC Comfort Club.html" class="nav-cta-club">Ask us about Comfort Club</a>
+        <a href="Happy HVAC Contact.html" class="nav-cta">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero" aria-label="Air Conditioning Solutions">
+  <div class="container">
+    <div class="hero-grid">
+     <div>
+    <div class="crumbs">
+      <a href="Happy HVAC Homepage.html">Home</a><span>/</span>Air Conditioning
+    </div>
+    <h1>Keeping Atlanta &amp; <em>North Georgia</em> families cool &amp; comfortable</h1>
+    <p class="lead">It gets hot here in Georgia, and when temperatures climb, every home runs to the AC. Even the best systems need professional attention sometimes — and that's where we come in. Happy HVAC Solutions is Atlanta's local full-service AC team, providing the repairs, replacements, installations, and maintenance you need to keep your air conditioner at peak performance.</p>
+    <p class="page-hero-services">
+      <strong>Residential Services</strong>
+      Installation <span>•</span> Repair <span>•</span> Maintenance <span>•</span> Design &amp; Enhancement
+    </p>
+    <div class="page-hero-actions">
+      <a href="tel:7703645141" class="btn btn-primary">Call 770-364-5141</a>
+      <a href="Happy HVAC Contact.html" class="btn btn-secondary">Request Service</a>
+    </div>
+    <div class="page-hero-meta">
+      <span class="meta-item"><span class="meta-dot"></span>Available 24 Hours</span>
+      <span class="meta-item"><span class="meta-dot"></span>Licensed &amp; Insured</span>
+      <span class="meta-item"><span class="meta-dot"></span>Warranty &amp; Maintenance</span>
+      <span class="meta-item"><span class="meta-dot"></span>15+ Years Experience</span>
+    </div>
+     </div>
+     <figure class="hero-image">
+       <img src="assets/hero-ac-units.jpg" alt="Three residential air conditioning condenser units installed alongside a home, surrounded by greenery">
+       <figcaption class="hero-image-tag">Carrier-certified installs across Metro Atlanta</figcaption>
+     </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Intro band -->
+<section class="intro" aria-labelledby="intro-heading">
+  <div class="container">
+    <div class="intro-grid">
+      <div>
+        <span class="section-label">Atlanta&rsquo;s Local AC Team</span>
+        <h2 id="intro-heading">Cool homes, <em>happy families</em></h2>
+      </div>
+      <div class="intro-copy">
+        <p class="intro-eyebrow">Full-service air conditioning</p>
+        <p>From the first scorching afternoon in May to the last muggy night in September, your AC works overtime in Atlanta. <strong>Happy HVAC Solutions</strong> keeps it running quietly, efficiently, and on the coldest setting your family wants &mdash; without the surprise repair bills.</p>
+        <p>Whether you need a quick repair, a full system replacement, a brand-new install, or scheduled seasonal maintenance, our certified technicians treat every home like our own. <strong>Honest pricing. Clean work. Real follow-through.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Home Solutions services list -->
+<section class="services-band" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="services-header">
+      <span class="section-label" style="margin-left:auto;margin-right:auto;">Home Solutions</span>
+      <h2 id="services-heading">What we cover for <em>residential AC</em></h2>
+      <p>Every part of your cooling system, every brand of equipment. Don&rsquo;t see what you need? Give us a call &mdash; if it cools, we service it.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-pill">AC Repair</div>
+      <div class="service-pill">AC Design</div>
+      <div class="service-pill">Mini-Split &amp; Ductless AC</div>
+      <div class="service-pill">AC Maintenance</div>
+      <div class="service-pill">AC Evaporator Coils</div>
+      <div class="service-pill">AC Smart Thermostats</div>
+      <div class="service-pill">AC Blower Fan</div>
+      <div class="service-pill">AC Compressor</div>
+      <div class="service-pill">Duct Replacement</div>
+      <div class="service-pill">Indoor Air Quality</div>
+      <div class="service-pill">New AC Installation</div>
+      <div class="service-pill">&amp; More&hellip;</div>
+    </div>
+  </div>
+</section>
+
+<!-- Install feature -->
+<section class="install-feature" aria-labelledby="install-heading">
+  <div class="container">
+    <div class="install-grid">
+      <div class="install-image">
+        <img src="assets/about-us-image.jpg" alt="Carrier outdoor AC unit installed beside a residential home in Atlanta">
+      </div>
+      <div class="install-copy">
+        <span class="section-label">Expert AC Installation</span>
+        <h3 id="install-heading">Customized solutions for <em>peak performance</em> &amp; long-lasting comfort</h3>
+        <p>An AC unit is a complex system that requires much more than taking it out of the box and plugging it in. When it comes to AC installation, <strong>one size does not fit all</strong>. You&rsquo;ll need a system that&rsquo;s precisely sized for your space &mdash; bigger is not necessarily better.</p>
+        <p>When you work with Happy HVAC Solutions, we&rsquo;ll help you determine which cooling system is right for your needs and budget. Your system will be properly sized, correctly installed, and thoroughly tested for optimal performance. We&rsquo;ll also make sure you understand exactly how to maintain it, so you&rsquo;ll get the most out of your new AC for as long as possible.</p>
+        <p>You&rsquo;ll even have the option to sign up for our convenient &amp; affordable <a href="Happy HVAC Comfort Club.html">Happy Home Comfort Club membership</a> to keep your system performing at peak efficiency year after year.</p>
+        <ul class="install-bullets">
+          <li>Properly sized for your home</li>
+          <li>Correctly installed &amp; tested</li>
+          <li>Maintenance walkthrough included</li>
+          <li>Comfort Club membership available</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust badges -->
+<section class="badges" aria-label="What you can count on">
+  <div class="container">
+    <div class="badges-grid">
+      <div class="badge-card">
+        <div class="badge-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="badge-text">
+          Available 24 Hours
+          <small>Nights, weekends, holidays &mdash; we answer.</small>
+        </div>
+      </div>
+      <div class="badge-card">
+        <div class="badge-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 20 10.2c0 7.3-8 11.8-8 11.8z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <div class="badge-text">
+          Licensed &amp; Insured
+          <small>Fully covered &amp; certified in Georgia.</small>
+        </div>
+      </div>
+      <div class="badge-card">
+        <div class="badge-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="badge-text">
+          Warranty &amp; Maintenance
+          <small>Backed by Comfort Club coverage.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Emergency / call-now band -->
+<section class="emergency" aria-labelledby="emergency-heading">
+  <div class="container">
+    <span class="section-label" style="margin-left:auto;margin-right:auto;">Need Help Now?</span>
+    <h2 id="emergency-heading">Call Happy HVAC at <em>770-364-5141</em> for an estimate or 24/7 emergency service</h2>
+    <p>Custom AC service, replacements, and immediate emergency response &mdash; we&rsquo;re ready when you need us most.</p>
+    <div class="emergency-actions">
+      <a href="tel:7703645141" class="btn btn-primary">Call 770-364-5141</a>
+      <a href="Happy HVAC Comfort Club.html" class="btn btn-blue">Join Our Comfort Club</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner" aria-label="In-home consultation">
+  <div class="container">
+    <h2>How can we <em>help you?</em></h2>
+    <p>Schedule an in-home consultation. We&rsquo;ll walk your space, talk through your options, and quote you honestly &mdash; no pressure.</p>
+    <div class="cta-actions">
+      <a href="tel:7703645141" class="btn btn-primary">Call 770-364-5141</a>
+      <a href="Happy HVAC Contact.html" class="btn btn-secondary">Request Service</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/happy-hvac-animation.gif" alt="Happy HVAC Solutions">
+        <p>Family-owned HVAC, plumbing, electrical, and refrigeration services serving Atlanta and North Georgia. Licensed, insured, and committed to your comfort.</p>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13 1 .39 1.98.74 2.93a2 2 0 0 1-.45 2.11L7.91 9.03a16 16 0 0 0 6 6l1-1.09a2 2 0 0 1 2.11-.45c.95.35 1.93.61 2.93.74A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:7703645141">770-364-5141</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:zach@happyhvacsolutions.com">zach@happyhvacsolutions.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>1988 Willeo Creek Pt, Marietta, GA</span>
+        </div>
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.facebook.com/profile.php?id=61562722187512" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happyhvacsolutions/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.yelp.com/biz/happy-hvac-solutions-marietta" target="_blank" rel="noopener" aria-label="Yelp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.4 2.3v9.4c0 .9.6 1.4 1.3 1.1l3.7-1.4c.7-.3.9-1.2.4-2L15.9.7c-.5-.7-1.5-.4-1.5 1.6zm-1.6 14.3v5.1c0 1.7-.8 2-1.6 1.4l-2.9-2.4c-.7-.6-.6-1.6.1-2l3.4-2.6c.6-.5 1 0 1 .5zm1.4-2.7c0-.9.7-1.3 1.4-1l3.6 1.5c.8.3.9 1.3.2 2L17 18.6c-.6.6-1.4.4-1.7-.4l-1.1-3.4v-.9zM10.7 13c.7 0 1.1-.5.6-1.4L5.6 1c-.3-.6-1.3-.4-1.7.7C2.4 5.5 2 9.6 2.6 11.4c.2.6.7 1 1.5 1l6.6.6zm.6 2.4c.6-.6.4-1.4-.4-1.5l-3.5-.7c-.9-.2-1.6.5-1.4 1.5l.5 3.7c.1 1 1 1.4 1.7.7l3.1-3.7z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="Happy HVAC Air Conditioning.html">Air Conditioning</a></li>
+          <li><a href="/heating-solutions/">Heating</a></li>
+          <li><a href="/indoor-air-quality-solutions/">Indoor Air Quality</a></li>
+          <li><a href="/plumbing-solutions/">Plumbing</a></li>
+          <li><a href="/electrical-solutions/">Electrical</a></li>
+          <li><a href="/commercial-hvac-r-in-atlanta-north-georgia/">Commercial HVAC-R</a></li>
+          <li><a href="/restaurant-refrigeration-services/">Restaurant &amp; Refrigeration</a></li>
+          <li><a href="/water-heater/">Water Heater</a></li>
+          <li><a href="/duct-work/">Duct Work</a></li>
+          <li><a href="/hvac-r-design-installation/">HVAC-R Design &amp; Installation</a></li>
+          <li><a href="/smart-home-technology/">Smart Home Technology</a></li>
+          <li><a href="/financing-options/">Financing Options</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="Happy HVAC Atlanta.html">Atlanta, GA</a></li>
+          <li><a href="/hvac-marietta-ga/">Marietta, GA</a></li>
+          <li><a href="/hvac-alpharetta-ga/">Alpharetta, GA</a></li>
+          <li><a href="/hvac-roswell-ga/">Roswell, GA</a></li>
+          <li><a href="/hvac-kennesaw-ga/">Kennesaw, GA</a></li>
+          <li><a href="/hvac-woodstock-ga/">Woodstock, GA</a></li>
+          <li><a href="/hvac-acworth-ga/">Acworth, GA</a></li>
+          <li><a href="/hvac-smyrna-ga/">Smyrna, GA</a></li>
+          <li><a href="/hvac-canton-ga/">Canton, GA</a></li>
+          <li><a href="/hvac-sandy-springs-ga/">Sandy Springs, GA</a></li>
+          <li><a href="/hvac-dunwoody-ga/">Dunwoody, GA</a></li>
+          <li><a href="/hvac-johns-creek-ga/">Johns Creek, GA</a></li>
+          <li><a href="/hvac-cumming-ga/">Cumming, GA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="Happy HVAC About.html">About Us</a></li>
+          <li><a href="Happy HVAC Testimonials.html">Reviews</a></li>
+          <li><a href="Happy HVAC Comfort Club.html">Comfort Club</a></li>
+          <li><a href="Happy HVAC Contact.html">Contact Us</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-use/">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Happy HVAC Solutions &copy; <span id="year"></span>. All Rights Reserved. Serving Atlanta &amp; North Georgia. Marietta, GA.</p>
+      <div class="footer-bottom-links">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-use/">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

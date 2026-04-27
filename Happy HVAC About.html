@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Happy HVAC Solutions — Marietta, GA</title>
+<meta name="description" content="Family-owned and operated since 2009. Happy HVAC Solutions serves Atlanta and North Georgia with honest, expert HVAC, plumbing, electrical, and refrigeration service. Meet the family.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://happyhvacsolutions.com/about-us/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #F26B1F;
+    --orange-dark: #D9551A;
+    --orange-light: #FFF1E6;
+    --pink: #E91E63;
+    --pink-dark: #C2185B;
+    --magenta: #FF2D87;
+    --yellow: #FFC93C;
+    --sky: #29B6F6;
+    --sky-dark: #0288D1;
+    --blue: #243B6B;
+    --blue-dark: #1A2C53;
+    --blue-light: #EEF3FB;
+    --white: #FFFFFF;
+    --off-white: #FFF9F2;
+    --gray-100: #F4EFE8;
+    --gray-200: #E5DED3;
+    --gray-400: #9B9890;
+    --gray-600: #5C5A55;
+    --gray-900: #1F2A44;
+    --tiedye: linear-gradient(135deg, #FFC93C 0%, #F26B1F 25%, #E91E63 55%, #FF2D87 75%, #29B6F6 100%);
+    --tiedye-soft: linear-gradient(135deg, #FFE9B8 0%, #FFD0A8 30%, #FFC2D8 60%, #C8ECFB 100%);
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+    --max-w: 1200px;
+    --radius: 4px;
+    --radius-lg: 8px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--gray-900);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    background: var(--blue);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 8px 0;
+  }
+  .topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .topbar-left { display: flex; gap: 24px; flex-wrap: wrap; }
+  .topbar-item { display: inline-flex; align-items: center; gap: 6px; }
+  .topbar-right a { font-weight: 600; }
+  .topbar-right a:hover { color: var(--orange); }
+
+  /* ── HEADER / NAV ── */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+    padding: 14px 0;
+    gap: 24px;
+  }
+  .logo { display: flex; align-items: center; }
+  .logo img { height: 104px; width: 104px; object-fit: contain; display: block; }
+
+  nav { display: flex; align-items: center; gap: 4px; }
+  nav a {
+    padding: 10px 14px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--gray-900);
+    transition: color 0.15s;
+  }
+  nav a:hover { color: var(--orange); }
+  nav a.nav-cta {
+    background: var(--orange);
+    color: var(--white);
+    padding: 12px 18px;
+    border-radius: var(--radius);
+    margin-left: 8px;
+    transition: background 0.2s;
+  }
+  nav a.nav-cta:hover { background: var(--orange-dark); color: var(--white); }
+  nav a.nav-cta-club {
+    position: relative; background: var(--tiedye); color: var(--white);
+    font-family: var(--font-display); font-size: 13px; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 12px 18px 12px 36px; border-radius: var(--radius); margin-left: 4px;
+    box-shadow: 0 6px 18px rgba(242,107,31,0.3); transition: transform 0.2s, box-shadow 0.2s;
+  }
+  nav a.nav-cta-club::before {
+    content: "★"; position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    font-size: 14px; color: #FFE08A; text-shadow: 0 0 6px rgba(255,224,138,0.7);
+  }
+  nav a.nav-cta-club:hover, nav a.nav-cta-club:focus, nav a.nav-cta-club:focus-visible { transform: translateY(-1px); box-shadow: 0 10px 22px rgba(242,107,31,0.4); color: var(--white) !important; background: var(--tiedye) !important; filter: brightness(1.06) saturate(1.05); }
+  nav a.nav-cta-club:active { transform: translateY(0); filter: brightness(0.98); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: 11px; }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 220px;
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    z-index: 200;
+    padding: 8px 0;
+  }
+  .nav-dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu a { display: block; padding: 10px 16px; font-size: 14px; }
+  .dropdown-menu a:hover { background: var(--off-white); color: var(--orange); }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 26px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-primary { background: var(--orange); color: var(--white); }
+  .btn-primary:hover { background: var(--orange-dark); }
+  .btn-secondary { background: transparent; color: var(--white); border-color: var(--white); }
+  .btn-secondary:hover { background: var(--white); color: var(--blue); }
+
+  /* ── PAGE HERO ── */
+  .page-hero {
+    position: relative;
+    color: var(--white);
+    overflow: hidden;
+    padding: 88px 0 96px;
+    background: var(--blue-dark);
+  }
+  .page-hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 100% 0%, rgba(255,201,60,0.20) 0%, transparent 55%),
+      radial-gradient(ellipse at 0% 100%, rgba(233,30,99,0.22) 0%, transparent 55%),
+      radial-gradient(ellipse at 50% 50%, rgba(41,182,246,0.10) 0%, transparent 70%);
+  }
+  .page-hero::after {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 0;
+    height: 4px;
+    background: var(--tiedye);
+  }
+  .page-hero .container { position: relative; z-index: 1; }
+  .crumbs {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 18px;
+  }
+  .crumbs a { color: rgba(255,255,255,0.85); }
+  .crumbs a:hover { color: var(--yellow); }
+  .crumbs span { margin: 0 8px; opacity: 0.5; }
+  .page-hero h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    max-width: 880px;
+  }
+  .page-hero h1 em {
+    font-style: normal;
+    background: var(--tiedye);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .page-hero p.lead {
+    font-size: clamp(17px, 1.6vw, 20px);
+    line-height: 1.55;
+    color: rgba(255,255,255,0.86);
+    max-width: 720px;
+  }
+  .page-hero-meta {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+  }
+  .meta-item {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .meta-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--tiedye);
+  }
+
+  /* ── SECTION SHARED ── */
+  section { padding: 96px 0; }
+  .section-label {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    background: var(--tiedye);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .section-label::before {
+    content: "";
+    width: 22px; height: 2px;
+    background: var(--tiedye);
+    border-radius: 2px;
+  }
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(34px, 4.6vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+  h2 em {
+    font-style: normal;
+    background: var(--tiedye);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* ── OUR STORY ── */
+  .story { background: var(--white); }
+  .story-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .story-image {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    box-shadow: 0 24px 60px rgba(31,42,68,0.22);
+  }
+  .story-image img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .story-image::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(160deg, transparent 55%, rgba(31,42,68,0.45) 100%);
+  }
+  .story-image-badge {
+    position: absolute;
+    bottom: 24px; left: 24px;
+    z-index: 2;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(6px);
+    border-radius: var(--radius-lg);
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .story-image-badge-num {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1;
+    background: var(--tiedye);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .story-image-badge-label {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--blue-dark);
+    line-height: 1.25;
+    max-width: 140px;
+  }
+  .story-copy h2 { margin-bottom: 22px; max-width: 520px; }
+  .story-copy p {
+    font-size: 17px;
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+  .story-copy p strong { color: var(--gray-900); font-weight: 600; }
+  .story-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 32px;
+  }
+  .stat-box {
+    background: var(--off-white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 22px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-box::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--tiedye);
+  }
+  .stat-num {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 1;
+    color: var(--blue-dark);
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    color: var(--gray-600);
+  }
+
+  /* ── VALUES (CARD GRID) ── */
+  .values { background: var(--off-white); position: relative; overflow: hidden; }
+  .values::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--tiedye);
+  }
+  .values-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .values-header h2 { margin-bottom: 16px; }
+  .values-header p {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: var(--gray-600);
+    line-height: 1.65;
+  }
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .value-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 36px 30px 32px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(31,42,68,0.10);
+  }
+  .value-num {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    background: var(--tiedye);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .value-card h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    margin-bottom: 14px;
+    color: var(--gray-900);
+  }
+  .value-card p {
+    color: var(--gray-600);
+    line-height: 1.65;
+    font-size: 15.5px;
+  }
+
+  /* ── BANNER (full-bleed image divider) ── */
+  .about-banner {
+    position: relative;
+    padding: 0;
+    background: var(--blue-dark);
+    overflow: hidden;
+  }
+  .about-banner-img {
+    position: relative;
+    width: 100%;
+    height: clamp(320px, 46vw, 560px);
+    overflow: hidden;
+  }
+  .about-banner-img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 55%;
+    display: block;
+  }
+  .about-banner-img::after {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(31,42,68,0.78) 0%, rgba(31,42,68,0.35) 45%, rgba(31,42,68,0.10) 75%, transparent 100%);
+  }
+  .about-banner-img::before {
+    content: "";
+    position: absolute; left: 0; right: 0; top: 0;
+    height: 4px;
+    background: var(--tiedye);
+    z-index: 3;
+  }
+  .about-banner-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    color: var(--white);
+  }
+  .about-banner-inner {
+    max-width: var(--max-w);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .about-banner-content h2 {
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.05;
+    color: var(--white);
+    max-width: 600px;
+    margin-bottom: 14px;
+  }
+  .about-banner-content h2 em {
+    background: var(--tiedye);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .about-banner-content p {
+    color: rgba(255,255,255,0.88);
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 480px;
+  }
+  .about-banner-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 16px;
+  }
+  .about-banner-tag::before {
+    content: "";
+    width: 26px; height: 2px;
+    background: var(--tiedye);
+    border-radius: 2px;
+  }
+
+  /* ── WHY CHOOSE US (TWO-COL FEATURE) ── */
+  .why-us { background: var(--white); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .why-left h2 { margin-bottom: 22px; }
+  .why-left p {
+    font-size: 17px;
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .why-image {
+    margin-top: 28px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 4 / 3;
+    box-shadow: 0 22px 50px rgba(31,42,68,0.18);
+  }
+  .why-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .why-image::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--tiedye);
+    z-index: 2;
+  }
+  .why-image::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 55%, rgba(31,42,68,0.55) 100%);
+  }
+  .why-image-caption {
+    position: absolute;
+    left: 22px; right: 22px; bottom: 20px;
+    z-index: 2;
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .why-image-caption::before {
+    content: "";
+    width: 24px; height: 2px;
+    background: var(--tiedye);
+    border-radius: 2px;
+  }
+  .why-list { display: flex; flex-direction: column; gap: 16px; margin-top: 12px; }
+  .why-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 22px;
+    background: var(--off-white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .why-item:hover {
+    transform: translateX(4px);
+    border-color: var(--orange);
+  }
+  .why-icon {
+    flex-shrink: 0;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--tiedye);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+  }
+  .why-text h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 6px;
+    color: var(--gray-900);
+  }
+  .why-text p {
+    margin: 0;
+    color: var(--gray-600);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* ── CTA BANNER ── */
+  .cta-banner {
+    background: var(--blue-dark);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    padding: 88px 0;
+  }
+  .cta-banner::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(255,201,60,0.18) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 50%, rgba(233,30,99,0.25) 0%, transparent 55%);
+  }
+  .cta-banner::after {
+    content: "";
+    position: absolute; left: 0; right: 0; top: 0;
+    height: 4px;
+    background: var(--tiedye);
+  }
+  .cta-banner .container { position: relative; z-index: 1; text-align: center; }
+  .cta-banner h2 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    margin-bottom: 18px;
+    color: var(--white);
+  }
+  .cta-banner h2 em {
+    background: var(--tiedye);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .cta-banner p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 32px;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--blue-dark);
+    color: rgba(255,255,255,0.75);
+    padding: 64px 0 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .footer-brand img { width: 220px; height: auto; max-height: 140px; object-fit: contain; margin-bottom: 16px; display: block; }
+  .footer-brand p { font-size: 14px; line-height: 1.65; margin-bottom: 20px; }
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .footer-contact-item a:hover { color: var(--orange); }
+  .footer-social { display: flex; gap: 10px; margin-top: 18px; }
+  .footer-social a {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.85);
+    transition: background 0.2s, color 0.2s, transform 0.2s, border-color 0.2s;
+  }
+  .footer-social a:hover {
+    background: var(--orange, #F97316);
+    border-color: var(--orange, #F97316);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .footer-col h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 8px; font-size: 14px; }
+  .footer-col a:hover { color: var(--orange); }
+  .footer-bottom {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+  }
+  .footer-bottom-links { display: flex; gap: 20px; }
+
+  /* ── MOBILE ── */
+  @media (max-width: 1200px) {
+    nav a { padding: 6px 8px; font-size: 13px; }
+    nav a.nav-cta-club { padding: 8px 14px 8px 30px !important; font-size: 12px; }
+    nav a.nav-cta { padding: 8px 14px !important; font-size: 12.5px; }
+  }
+  @media (max-width: 1024px) {
+    nav { gap: 2px; }
+    nav a { padding: 6px 7px; font-size: 12.5px; }
+    nav a.nav-cta-club::before { left: 10px; font-size: 12px; }
+    nav a.nav-cta-club { padding: 7px 12px 7px 26px !important; font-size: 11.5px; letter-spacing: 0.04em; }
+    nav a.nav-cta { padding: 7px 12px !important; font-size: 12px; }
+    .header-inner { gap: 16px; }
+    .logo img { height: 84px; width: 84px; }
+  }
+  @media (max-width: 760px) {
+    nav { display: none; }
+  }
+  @media (max-width: 1000px) {
+    .story-grid { grid-template-columns: 1fr; gap: 48px; }
+    .story-image { aspect-ratio: 4/3; max-width: 520px; margin: 0 auto; }
+    .why-grid { grid-template-columns: 1fr; gap: 40px; }
+    .values-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .topbar-left { gap: 14px; }
+    .topbar-item:nth-child(2) { display: none; }
+    .header-inner { min-height: 88px; }
+    .logo img { height: 72px; width: 72px; }
+    section { padding: 72px 0; }
+    .page-hero { padding: 64px 0 72px; }
+    .values-grid { grid-template-columns: 1fr; }
+    .story-stats { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="topbar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Open 24/7 for Emergencies
+      </span>
+      <span class="topbar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Serving Atlanta & North Georgia
+      </span>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:7703645141">Call 770-364-5141</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="Happy HVAC Homepage.html" class="logo" aria-label="Happy HVAC Solutions Home">
+        <img src="assets/happy-hvac-logo.png" alt="Happy HVAC Solutions logo" width="104" height="104">
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="Happy HVAC Air Conditioning.html">Air Conditioning</a>
+        <a href="/heating-solutions/">Heating</a>
+        <a href="/indoor-air-quality-solutions/">Indoor Air Quality</a>
+        <a href="Happy HVAC Testimonials.html">Reviews</a>
+        <a href="Happy HVAC About.html">About</a>
+        <div class="nav-dropdown">
+          <a href="#">More Services</a>
+          <div class="dropdown-menu">
+            <a href="/plumbing-solutions/">Plumbing</a>
+            <a href="/electrical-solutions/">Electrical</a>
+            <a href="/commercial-hvac-r-in-atlanta-north-georgia/">Commercial HVAC-R</a>
+            <a href="/restaurant-refrigeration-services/">Restaurant & Refrigeration</a>
+            <a href="/water-heater/">Water Heater</a>
+            <a href="/duct-work/">Duct Work</a>
+            <a href="/hvac-r-design-installation/">HVAC-R Design & Installation</a>
+            <a href="/smart-home-technology/">Smart Home Technology</a>
+            <a href="/financing-options/">Financing Options</a>
+          </div>
+        </div>
+        <a href="Happy HVAC Comfort Club.html" class="nav-cta-club">Ask us about Comfort Club</a>
+        <a href="Happy HVAC Contact.html" class="nav-cta">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero" aria-label="About">
+  <div class="container">
+    <div class="crumbs">
+      <a href="Happy HVAC Homepage.html">Home</a><span>/</span>About Us
+    </div>
+    <h1>Family-owned. Locally rooted. <em>Happy to help.</em></h1>
+    <p class="lead">Happy HVAC Solutions is a full-service HVAC company based in Marietta, Georgia, serving Atlanta and North Georgia with 15+ years of experience. We treat your home like ours — with honesty, integrity, and the kind of follow-through you'd expect from family.</p>
+    <div class="page-hero-meta">
+      <span class="meta-item"><span class="meta-dot"></span>Marietta, GA Headquarters</span>
+      <span class="meta-item"><span class="meta-dot"></span>Licensed &amp; Insured</span>
+      <span class="meta-item"><span class="meta-dot"></span>Available 24/7</span>
+      <span class="meta-item"><span class="meta-dot"></span>15+ Years Experience</span>
+    </div>
+  </div>
+</section>
+
+<!-- Our Story -->
+<section class="story" aria-labelledby="story-heading">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-image">
+        <img src="assets/why-us-tech.jpg" alt="Happy HVAC technician explaining a Carrier outdoor unit to a homeowner">
+        <div class="story-image-badge">
+          <div class="story-image-badge-num">15+</div>
+          <div class="story-image-badge-label">Years of expert HVAC-R service</div>
+        </div>
+      </div>
+      <div class="story-copy">
+        <span class="section-label">Our Story</span>
+        <h2 id="story-heading">A family business with <em>deep Marietta roots</em></h2>
+        <p>Happy HVAC Solutions LLC is a full-service HVAC company based in Marietta, Georgia servicing the Atlanta &amp; North Georgia area. We are <strong>family-owned and operated</strong> with deep roots based in Marietta, GA. We love supporting our community and serving our customers daily.</p>
+        <p>We specialize in residential &amp; commercial HVAC installation, maintenance, repair, design &amp; enhancement services. Our team of certified technicians is committed to providing exceptional service — and we operate our business under the principles of <strong>honesty, integrity, and dedication</strong> to our customers.</p>
+        <p>Happy HVAC Solutions prides itself on being a <strong>"one stop shop"</strong> that can diagnose, repair, install, maintain &amp; upgrade significant pieces of equipment, keeping homes &amp; businesses running with minimal delay. For commercial HVAC-R, we focus on commercial, light industrial, &amp; restaurant refrigeration — supporting all aspects of your home or business HVAC-R &amp; plumbing systems, ensuring they're happy.</p>
+        <div class="story-stats">
+          <div class="stat-box">
+            <div class="stat-num">15+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">1,000+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Satisfaction Guarantee</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Values -->
+<section class="values" aria-labelledby="values-heading">
+  <div class="container">
+    <div class="values-header">
+      <span class="section-label" style="margin-left:auto;margin-right:auto;">What we stand for</span>
+      <h2 id="values-heading">The principles that <em>guide every job</em></h2>
+      <p>Five things you can count on every time we step onto your property — whether it's a tune-up, an emergency call, or a full system install.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <span class="value-num">01 / Professionalism</span>
+        <h3>Available when you need us</h3>
+        <p>Happy HVAC Solutions is available to our clients after hours, weekends, and holidays for emergency repair. Call us 24/7 when you need help — we'll be ready when needed most.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">02 / Integrity</span>
+        <h3>100% satisfaction guarantee</h3>
+        <p>We offer a 100% satisfaction guarantee on every air conditioning, heating, indoor air quality, plumbing, and electrical service we deliver. If you're not happy, we make it right.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">03 / Guaranteed Service</span>
+        <h3>Certified, experienced, careful</h3>
+        <p>Our certified technicians have your safety, welfare, and comfort in mind at all times. We stand by our work and ensure the satisfaction of every customer and project.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">04 / Commitment</span>
+        <h3>Done right the first time</h3>
+        <p>We never leave a job site without walking you through what we did and letting you know things to be mindful of. Full transparency throughout the process — and the job is done right the first time.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">05 / Flexibility</span>
+        <h3>We service all major brands</h3>
+        <p>We repair, maintain, and install all major brands of HVAC equipment. You don't have to buy your unit through us either — we'll install equipment purchased directly by the customer.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">06 / Community</span>
+        <h3>Atlanta neighbors, not contractors</h3>
+        <p>Marietta is home. We treat every customer the way we'd treat our own neighbors — because most of the time, that's exactly who you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Full-bleed banner -->
+<section class="about-banner" aria-label="Keeping homes happy">
+  <div class="about-banner-img">
+    <img src="assets/about-us-image.jpg" alt="A child running past a Carrier outdoor AC unit at a neighborhood home">
+    <div class="about-banner-content">
+      <div class="about-banner-inner">
+        <span class="about-banner-tag">Keeping Atlanta homes happy</span>
+        <h2>Comfort that lets <em>life happen.</em></h2>
+        <p>From sweltering July afternoons to chilly January mornings, we keep the systems running so the families inside don’t have to think about them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-us" aria-labelledby="why-us-heading">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-left">
+        <span class="section-label">Why Customers Choose Us</span>
+        <h2 id="why-us-heading">The Happy HVAC <em>difference</em></h2>
+        <p>When something breaks, you don't want a sales pitch — you want it fixed. Atlanta-area homeowners and businesses keep coming back because we show up, do the work, and treat your equipment (and your home) like it matters.</p>
+        <p>We've built our reputation one tune-up, one install, and one emergency call at a time. Here's what that looks like in practice:</p>
+        <figure class="why-image">
+          <img src="assets/hero-ac-units.jpg" alt="Carrier HVAC condenser units installed outside an Atlanta-area home">
+          <figcaption class="why-image-caption">Installed and maintained across Atlanta’s hottest summers</figcaption>
+        </figure>
+      </div>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="why-text">
+            <h4>24/7 emergency response</h4>
+            <p>Nights, weekends, and holidays. When your AC quits in July or your heat fails in January, we answer the phone.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div class="why-text">
+            <h4>One stop shop</h4>
+            <p>HVAC, plumbing, electrical, and refrigeration — diagnosed, repaired, installed, and maintained by one trusted team.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="why-text">
+            <h4>Local, family-owned</h4>
+            <p>Headquartered in Marietta. We live where we work, so showing up and standing behind every job isn't optional.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2L3 7l9 5 9-5-9-5z"/><path d="M3 17l9 5 9-5"/><path d="M3 12l9 5 9-5"/></svg>
+          </div>
+          <div class="why-text">
+            <h4>Certified technicians, all brands</h4>
+            <p>Trained on Carrier, Trane, Lennox, Goodman — every major brand. Bring us your equipment, we'll keep it happy.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="why-text">
+            <h4>100% satisfaction guarantee</h4>
+            <p>If something isn't right, we make it right. Every service, every install — backed by our word.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          </div>
+          <div class="why-text">
+            <h4>Transparent walkthroughs</h4>
+            <p>We never leave a job without walking you through what we did and what to keep an eye on. No mystery invoices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner" aria-label="Schedule">
+  <div class="container">
+    <h2>Ready to <em>meet the Happy HVAC family?</em></h2>
+    <p>Book a service call, ask about Comfort Club, or just say hi. We'd love to keep your home or business happy.</p>
+    <div class="cta-actions">
+      <a href="tel:7703645141" class="btn btn-primary">Call 770-364-5141</a>
+      <a href="Happy HVAC Contact.html" class="btn btn-secondary">Request Service</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/happy-hvac-animation.gif" alt="Happy HVAC Solutions">
+        <p>Family-owned HVAC, plumbing, electrical, and refrigeration services serving Atlanta and North Georgia since 2009. Licensed, insured, and committed to your comfort.</p>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13 1 .39 1.98.74 2.93a2 2 0 0 1-.45 2.11L7.91 9.03a16 16 0 0 0 6 6l1-1.09a2 2 0 0 1 2.11-.45c.95.35 1.93.61 2.93.74A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:7703645141">770-364-5141</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:zach@happyhvacsolutions.com">zach@happyhvacsolutions.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>1988 Willeo Creek Pt, Marietta, GA</span>
+        </div>
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.facebook.com/profile.php?id=61562722187512" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happyhvacsolutions/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.yelp.com/biz/happy-hvac-solutions-marietta" target="_blank" rel="noopener" aria-label="Yelp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.4 2.3v9.4c0 .9.6 1.4 1.3 1.1l3.7-1.4c.7-.3.9-1.2.4-2L15.9.7c-.5-.7-1.5-.4-1.5 1.6zm-1.6 14.3v5.1c0 1.7-.8 2-1.6 1.4l-2.9-2.4c-.7-.6-.6-1.6.1-2l3.4-2.6c.6-.5 1 0 1 .5zm1.4-2.7c0-.9.7-1.3 1.4-1l3.6 1.5c.8.3.9 1.3.2 2L17 18.6c-.6.6-1.4.4-1.7-.4l-1.1-3.4v-.9zM10.7 13c.7 0 1.1-.5.6-1.4L5.6 1c-.3-.6-1.3-.4-1.7.7C2.4 5.5 2 9.6 2.6 11.4c.2.6.7 1 1.5 1l6.6.6zm.6 2.4c.6-.6.4-1.4-.4-1.5l-3.5-.7c-.9-.2-1.6.5-1.4 1.5l.5 3.7c.1 1 1 1.4 1.7.7l3.1-3.7z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="Happy HVAC Air Conditioning.html">Air Conditioning</a></li>
+          <li><a href="/heating-solutions/">Heating</a></li>
+          <li><a href="/indoor-air-quality-solutions/">Indoor Air Quality</a></li>
+          <li><a href="/plumbing-solutions/">Plumbing</a></li>
+          <li><a href="/electrical-solutions/">Electrical</a></li>
+          <li><a href="/commercial-hvac-r-in-atlanta-north-georgia/">Commercial HVAC-R</a></li>
+          <li><a href="/restaurant-refrigeration-services/">Restaurant &amp; Refrigeration</a></li>
+          <li><a href="/water-heater/">Water Heater</a></li>
+          <li><a href="/duct-work/">Duct Work</a></li>
+          <li><a href="/hvac-r-design-installation/">HVAC-R Design &amp; Installation</a></li>
+          <li><a href="/smart-home-technology/">Smart Home Technology</a></li>
+          <li><a href="/financing-options/">Financing Options</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="Happy HVAC Atlanta.html">Atlanta, GA</a></li>
+          <li><a href="/hvac-marietta-ga/">Marietta, GA</a></li>
+          <li><a href="/hvac-alpharetta-ga/">Alpharetta, GA</a></li>
+          <li><a href="/hvac-roswell-ga/">Roswell, GA</a></li>
+          <li><a href="/hvac-kennesaw-ga/">Kennesaw, GA</a></li>
+          <li><a href="/hvac-woodstock-ga/">Woodstock, GA</a></li>
+          <li><a href="/hvac-acworth-ga/">Acworth, GA</a></li>
+          <li><a href="/hvac-smyrna-ga/">Smyrna, GA</a></li>
+          <li><a href="/hvac-canton-ga/">Canton, GA</a></li>
+          <li><a href="/hvac-sandy-springs-ga/">Sandy Springs, GA</a></li>
+          <li><a href="/hvac-dunwoody-ga/">Dunwoody, GA</a></li>
+          <li><a href="/hvac-johns-creek-ga/">Johns Creek, GA</a></li>
+          <li><a href="/hvac-cumming-ga/">Cumming, GA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="Happy HVAC About.html">About Us</a></li>
+          <li><a href="Happy HVAC Testimonials.html">Reviews</a></li>
+          <li><a href="Happy HVAC Comfort Club.html">Comfort Club</a></li>
+          <li><a href="Happy HVAC Contact.html">Contact Us</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-use/">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Happy HVAC Solutions &copy; <span id="year"></span>. All Rights Reserved. Serving Atlanta &amp; North Georgia. Marietta, GA.</p>
+      <div class="footer-bottom-links">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-use/">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

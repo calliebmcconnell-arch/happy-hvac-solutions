@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Happy HVAC Solutions &mdash; Marietta, GA</title>
+<meta name="description" content="Contact Happy HVAC Solutions in Marietta, GA. Call 770-364-5141 for 24/7 emergency service, or schedule online. Serving Atlanta and North Georgia.">
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #F26B1F;
+    --orange-dark: #D9551A;
+    --pink: #E91E63;
+    --magenta: #FF2D87;
+    --yellow: #FFC93C;
+    --sky: #29B6F6;
+    --blue: #243B6B;
+    --blue-dark: #1A2C53;
+    --white: #FFFFFF;
+    --off-white: #FFF9F2;
+    --gray-100: #F4EFE8;
+    --gray-200: #E5DED3;
+    --gray-400: #9B9890;
+    --gray-600: #5C5A55;
+    --gray-900: #1F2A44;
+    --tiedye: linear-gradient(135deg, #FFC93C 0%, #F26B1F 25%, #E91E63 55%, #FF2D87 75%, #29B6F6 100%);
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+    --max-w: 1200px;
+    --radius: 4px;
+    --radius-lg: 8px;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    color: var(--gray-900);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+  /* Top bar */
+  .topbar { background: var(--blue); color: var(--white); font-size: 13px; font-weight: 500; padding: 8px 0; }
+  .topbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .topbar-left { display: flex; gap: 24px; flex-wrap: wrap; }
+  .topbar-item { display: inline-flex; align-items: center; gap: 6px; }
+  .topbar-right a { font-weight: 600; }
+  .topbar-right a:hover { color: var(--orange); }
+
+  header { background: var(--white); border-bottom: 1px solid var(--gray-200); position: sticky; top: 0; z-index: 100; }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 120px; padding: 14px 0; gap: 24px; }
+  .logo img { height: 104px; width: 104px; object-fit: contain; }
+  nav { display: flex; align-items: center; gap: 4px; }
+  nav a { padding: 10px 14px; font-family: var(--font-display); font-weight: 600; font-size: 16px; letter-spacing: 0.02em; text-transform: uppercase; color: var(--gray-900); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--orange); }
+  nav a.nav-cta { background: var(--orange); color: var(--white); padding: 12px 18px; border-radius: var(--radius); margin-left: 8px; }
+  nav a.nav-cta:hover { background: var(--orange-dark); color: var(--white); }
+  nav a.nav-cta-club {
+    position: relative; background: var(--tiedye); color: var(--white);
+    font-family: var(--font-display); font-size: 13px; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 12px 18px 12px 36px; border-radius: var(--radius); margin-left: 4px;
+    box-shadow: 0 6px 18px rgba(242,107,31,0.3); transition: transform 0.2s, box-shadow 0.2s;
+  }
+  nav a.nav-cta-club::before {
+    content: "★"; position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    font-size: 14px; color: #FFE08A; text-shadow: 0 0 6px rgba(255,224,138,0.7);
+  }
+  nav a.nav-cta-club:hover, nav a.nav-cta-club:focus, nav a.nav-cta-club:focus-visible { transform: translateY(-1px); box-shadow: 0 10px 22px rgba(242,107,31,0.4); color: var(--white) !important; background: var(--tiedye) !important; filter: brightness(1.06) saturate(1.05); }
+  nav a.nav-cta-club:active { transform: translateY(0); filter: brightness(0.98); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: 11px; }
+  .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: var(--white); min-width: 220px; border: 1px solid var(--gray-200); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu a { display: block; padding: 10px 16px; font-size: 14px; }
+  .dropdown-menu a:hover { background: var(--off-white); color: var(--orange); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 26px; font-family: var(--font-display); font-weight: 700; font-size: 16px; letter-spacing: 0.04em; text-transform: uppercase; border-radius: var(--radius); border: 2px solid transparent; cursor: pointer; transition: all 0.2s; }
+  .btn-primary { background: var(--orange); color: var(--white); }
+  .btn-primary:hover { background: var(--orange-dark); }
+  .btn-secondary { background: transparent; color: var(--white); border-color: var(--white); }
+  .btn-secondary:hover { background: var(--white); color: var(--blue); }
+  .btn-blue { background: var(--blue); color: var(--white); }
+  .btn-blue:hover { background: var(--blue-dark); }
+  .btn-block { width: 100%; }
+
+  /* Page hero */
+  .page-hero { position: relative; color: var(--white); overflow: hidden; padding: 80px 0 88px; background: var(--blue-dark); }
+  .page-hero::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 100% 0%, rgba(41,182,246,0.28) 0%, transparent 60%),
+      radial-gradient(ellipse at 0% 100%, rgba(233,30,99,0.22) 0%, transparent 55%);
+  }
+  .page-hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--tiedye); }
+  .page-hero .container { position: relative; z-index: 1; }
+  .crumbs { font-family: var(--font-display); text-transform: uppercase; font-size: 13px; letter-spacing: 0.18em; color: rgba(255,255,255,0.7); margin-bottom: 18px; }
+  .crumbs a { color: rgba(255,255,255,0.85); }
+  .crumbs a:hover { color: var(--yellow); }
+  .crumbs span { margin: 0 8px; opacity: 0.5; }
+  .page-hero h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(40px, 6vw, 68px); line-height: 1.02; letter-spacing: -0.01em; text-transform: uppercase; margin-bottom: 18px; max-width: 18ch; }
+  .page-hero h1 em { font-style: normal; background: var(--tiedye); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .page-hero p.lead { font-size: clamp(17px, 1.6vw, 19px); line-height: 1.55; color: rgba(255,255,255,0.86); max-width: 600px; }
+  .hero-quick { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
+
+  /* Contact split */
+  .contact-split { padding: 88px 0; background: var(--off-white); }
+  .split-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: start; }
+  .section-label { font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; background: var(--tiedye); -webkit-background-clip: text; background-clip: text; color: transparent; display: inline-flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .section-label::before { content: ""; width: 22px; height: 2px; background: var(--tiedye); border-radius: 2px; }
+  h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05; letter-spacing: -0.01em; text-transform: uppercase; margin-bottom: 14px; }
+  h2 em { font-style: normal; background: var(--tiedye); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .split-intro { color: var(--gray-600); font-size: 17px; margin-bottom: 32px; }
+
+  /* Contact methods */
+  .contact-methods { display: grid; gap: 14px; margin-bottom: 40px; }
+  .method-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .method-card:hover { border-color: var(--orange); transform: translateX(2px); }
+  .method-icon {
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: var(--off-white);
+    color: var(--orange);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .method-icon.tiedye {
+    background: var(--tiedye);
+    color: var(--white);
+  }
+  .method-content { flex: 1; min-width: 0; }
+  .method-label { font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gray-600); margin-bottom: 4px; }
+  .method-value { font-family: var(--font-display); font-weight: 700; font-size: 22px; line-height: 1.15; color: var(--gray-900); }
+  .method-value a:hover { color: var(--orange); }
+  .method-sub { font-size: 13.5px; color: var(--gray-600); margin-top: 4px; }
+
+  /* Hours card */
+  .hours-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+  }
+  .hours-card h3 { font-family: var(--font-display); font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+  .hours-list { list-style: none; }
+  .hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--gray-200);
+    font-size: 15px;
+  }
+  .hours-list li:last-child { border-bottom: 0; }
+  .hours-list li.today { background: var(--off-white); padding: 10px 12px; margin: 0 -12px; border-radius: 4px; border-bottom-color: transparent; }
+  .hours-day { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+  .hours-time { color: var(--gray-600); font-weight: 500; }
+  .hours-list li.today .hours-day { color: var(--orange); }
+  .hours-list li.today .hours-time { color: var(--gray-900); font-weight: 600; }
+  .emergency-strip {
+    margin-top: 18px;
+    padding: 14px 16px;
+    background: var(--blue-dark);
+    color: var(--white);
+    border-radius: var(--radius);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .emergency-strip strong { color: var(--yellow); font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* Form */
+  .form-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .form-card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0;
+    height: 4px; background: var(--tiedye);
+  }
+  .form-title { font-family: var(--font-display); font-weight: 800; font-size: 28px; text-transform: uppercase; letter-spacing: -0.005em; margin-bottom: 6px; }
+  .form-sub { color: var(--gray-600); font-size: 15px; margin-bottom: 28px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .form-field { display: flex; flex-direction: column; }
+  .form-field.full { grid-column: 1 / -1; }
+  .form-field label {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-900);
+    margin-bottom: 6px;
+  }
+  .form-field label .req { color: var(--orange); }
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-family: var(--font-body);
+    font-size: 15px;
+    padding: 12px 14px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius);
+    background: var(--white);
+    color: var(--gray-900);
+    transition: border-color 0.15s, box-shadow 0.15s;
+    width: 100%;
+  }
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+    box-shadow: 0 0 0 3px rgba(242,107,31,0.12);
+  }
+  .form-field textarea { resize: vertical; min-height: 120px; }
+  .form-checkbox { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--gray-600); margin-bottom: 22px; }
+  .form-checkbox input { margin-top: 4px; flex-shrink: 0; }
+  .form-disclaimer { font-size: 12px; color: var(--gray-600); margin-top: 16px; line-height: 1.5; }
+
+  /* Map section */
+  .map-section { padding: 0; background: var(--white); }
+  .map-grid { display: grid; grid-template-columns: 1fr 1.4fr; min-height: 480px; }
+  .map-panel { background: var(--blue-dark); color: var(--white); padding: 64px 56px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+  .map-panel::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 0% 100%, rgba(255,201,60,0.12) 0%, transparent 55%); }
+  .map-panel > * { position: relative; z-index: 1; }
+  .map-panel .section-label { color: var(--yellow); background: none; -webkit-background-clip: initial; background-clip: initial; }
+  .map-panel .section-label::before { background: var(--yellow); }
+  .map-panel h2 { color: var(--white); margin-bottom: 14px; }
+  .map-panel h2 em { background: var(--tiedye); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .map-panel p.address { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 1.35; color: var(--white); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.01em; }
+  .map-panel p.area { font-size: 15px; color: rgba(255,255,255,0.78); margin-bottom: 32px; }
+  .map-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .map-embed { position: relative; min-height: 480px; }
+  .map-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+  /* Service Area Strip */
+  .area-strip { padding: 64px 0; background: var(--off-white); border-top: 1px solid var(--gray-200); }
+  .area-strip-head { text-align: center; margin-bottom: 32px; }
+  .area-strip h3 { font-family: var(--font-display); font-weight: 800; font-size: clamp(28px, 3vw, 36px); text-transform: uppercase; letter-spacing: -0.005em; margin-bottom: 8px; }
+  .area-strip p { color: var(--gray-600); }
+  .area-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 880px; margin: 0 auto; }
+  .area-pill {
+    padding: 10px 18px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 999px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--gray-900);
+    transition: all 0.15s;
+  }
+  .area-pill:hover { background: var(--orange); color: var(--white); border-color: var(--orange); }
+
+  /* CTA Banner */
+  .cta-banner { background: var(--blue-dark); color: var(--white); position: relative; overflow: hidden; padding: 80px 0; }
+  .cta-banner::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 50%, rgba(255,201,60,0.18) 0%, transparent 55%), radial-gradient(ellipse at 80% 50%, rgba(233,30,99,0.25) 0%, transparent 55%); }
+  .cta-banner::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--tiedye); }
+  .cta-banner .container { position: relative; z-index: 1; text-align: center; }
+  .cta-banner h2 { color: var(--white); margin-bottom: 14px; font-size: clamp(34px, 4.2vw, 48px); }
+  .cta-banner h2 em { background: var(--tiedye); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .cta-banner p { font-size: 17px; color: rgba(255,255,255,0.85); margin-bottom: 28px; max-width: 580px; margin-left: auto; margin-right: auto; }
+  .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+  /* Footer */
+  footer { background: var(--blue-dark); color: rgba(255,255,255,0.75); padding: 64px 0 0; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .footer-brand img { width: 220px; max-height: 140px; object-fit: contain; margin-bottom: 16px; }
+  .footer-brand p { font-size: 14px; line-height: 1.65; margin-bottom: 20px; }
+  .footer-contact-item { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 14px; }
+  .footer-contact-item a:hover { color: var(--orange); }
+  .footer-social { display: flex; gap: 10px; margin-top: 18px; }
+  .footer-social a {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.85);
+    transition: background 0.2s, color 0.2s, transform 0.2s, border-color 0.2s;
+  }
+  .footer-social a:hover {
+    background: var(--orange, #F97316);
+    border-color: var(--orange, #F97316);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .footer-col h4 { font-family: var(--font-display); font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--white); margin-bottom: 16px; }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 8px; font-size: 14px; }
+  .footer-col a:hover { color: var(--orange); }
+  .footer-bottom { padding: 20px 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; font-size: 13px; }
+  .footer-bottom-links { display: flex; gap: 20px; }
+
+  @media (max-width: 1200px) {
+    nav a { padding: 6px 8px; font-size: 13px; }
+    nav a.nav-cta-club { padding: 8px 14px 8px 30px !important; font-size: 12px; }
+    nav a.nav-cta { padding: 8px 14px !important; font-size: 12.5px; }
+  }
+  @media (max-width: 1024px) {
+    nav { gap: 2px; }
+    nav a { padding: 6px 7px; font-size: 12.5px; }
+    nav a.nav-cta-club::before { left: 10px; font-size: 12px; }
+    nav a.nav-cta-club { padding: 7px 12px 7px 26px !important; font-size: 11.5px; letter-spacing: 0.04em; }
+    nav a.nav-cta { padding: 7px 12px !important; font-size: 12px; }
+    .header-inner { gap: 16px; }
+    .logo img { height: 84px; width: 84px; }
+  }
+  @media (max-width: 760px) {
+    nav { display: none; }
+  }
+  @media (max-width: 1000px) {
+    .split-grid { grid-template-columns: 1fr; gap: 40px; }
+    .map-grid { grid-template-columns: 1fr; }
+    .map-panel { padding: 48px 24px; }
+    .map-embed { min-height: 360px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    .header-inner { min-height: 88px; }
+    .logo img { height: 72px; width: 72px; }
+    .topbar-left { gap: 14px; }
+    .form-row { grid-template-columns: 1fr; }
+    .form-card { padding: 28px 22px; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="topbar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Open 24/7 for Emergencies
+      </span>
+      <span class="topbar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Serving Atlanta &amp; North Georgia
+      </span>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:7703645141">Call 770-364-5141</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="Happy HVAC Homepage.html" class="logo" aria-label="Happy HVAC Solutions Home">
+        <img src="assets/happy-hvac-logo.png" alt="Happy HVAC Solutions logo" width="104" height="104">
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="Happy HVAC Air Conditioning.html">Air Conditioning</a>
+        <a href="/heating-solutions/">Heating</a>
+        <a href="/indoor-air-quality-solutions/">Indoor Air Quality</a>
+        <a href="Happy HVAC Testimonials.html">Reviews</a>
+        <a href="Happy HVAC About.html">About</a>
+        <div class="nav-dropdown">
+          <a href="#">More Services</a>
+          <div class="dropdown-menu">
+            <a href="/plumbing-solutions/">Plumbing</a>
+            <a href="/electrical-solutions/">Electrical</a>
+            <a href="/commercial-hvac-r-in-atlanta-north-georgia/">Commercial HVAC-R</a>
+            <a href="/restaurant-refrigeration-services/">Restaurant &amp; Refrigeration</a>
+            <a href="/water-heater/">Water Heater</a>
+            <a href="/duct-work/">Duct Work</a>
+            <a href="/hvac-r-design-installation/">HVAC-R Design &amp; Installation</a>
+            <a href="/smart-home-technology/">Smart Home Technology</a>
+            <a href="/financing-options/">Financing Options</a>
+          </div>
+        </div>
+        <a href="Happy HVAC Comfort Club.html" class="nav-cta-club">Ask us about Comfort Club</a>
+        <a href="Happy HVAC Contact.html" class="nav-cta active">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="crumbs"><a href="Happy HVAC Homepage.html">Home</a><span>/</span>Contact</div>
+    <h1>Let&rsquo;s get your home <em>comfortable again.</em></h1>
+    <p class="lead">Call, text, or send us a note. A real person picks up &mdash; and we&rsquo;re on call 24/7 for emergencies across Metro Atlanta and North Georgia.</p>
+    <div class="hero-quick">
+      <a href="tel:7703645141" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13 1 .39 1.98.74 2.93a2 2 0 0 1-.45 2.11L7.91 9.03a16 16 0 0 0 6 6l1-1.09a2 2 0 0 1 2.11-.45c.95.35 1.93.61 2.93.74A2 2 0 0 1 22 16.92z"/></svg>
+        Call 770-364-5141
+      </a>
+      <a href="#schedule-form" class="btn btn-secondary">Request Service Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Split: Methods + Form -->
+<section class="contact-split">
+  <div class="container">
+    <div class="split-grid">
+
+      <!-- Left: contact methods + hours -->
+      <div>
+        <span class="section-label">How to Reach Us</span>
+        <h2>Pick the way that <em>works for you.</em></h2>
+        <p class="split-intro">Whether it&rsquo;s a midnight breakdown or a routine tune-up question, we&rsquo;re glad to hear from you.</p>
+
+        <div class="contact-methods">
+          <a href="tel:7703645141" class="method-card">
+            <span class="method-icon tiedye">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13 1 .39 1.98.74 2.93a2 2 0 0 1-.45 2.11L7.91 9.03a16 16 0 0 0 6 6l1-1.09a2 2 0 0 1 2.11-.45c.95.35 1.93.61 2.93.74A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div class="method-content">
+              <div class="method-label">Call or Text</div>
+              <div class="method-value">770-364-5141</div>
+              <div class="method-sub">24/7 emergency line &mdash; we answer the phone.</div>
+            </div>
+          </a>
+
+          <a href="mailto:zach@happyhvacsolutions.com" class="method-card">
+            <span class="method-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <div class="method-content">
+              <div class="method-label">Email</div>
+              <div class="method-value">zach@happyhvacsolutions.com</div>
+              <div class="method-sub">We reply within one business day.</div>
+            </div>
+          </a>
+
+          <a href="https://maps.google.com/?q=1988+Willeo+Creek+Pt,+Marietta,+GA" target="_blank" rel="noopener" class="method-card">
+            <span class="method-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div class="method-content">
+              <div class="method-label">Visit / Mail</div>
+              <div class="method-value">1988 Willeo Creek Pt</div>
+              <div class="method-sub">Marietta, GA &mdash; serving all of Metro Atlanta &amp; North Georgia.</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Hours -->
+        <div class="hours-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Hours of Operation
+          </h3>
+          <ul class="hours-list" id="hoursList">
+            <li data-day="1"><span class="hours-day">Monday</span><span class="hours-time">7:00 AM &ndash; 7:00 PM</span></li>
+            <li data-day="2"><span class="hours-day">Tuesday</span><span class="hours-time">7:00 AM &ndash; 7:00 PM</span></li>
+            <li data-day="3"><span class="hours-day">Wednesday</span><span class="hours-time">7:00 AM &ndash; 7:00 PM</span></li>
+            <li data-day="4"><span class="hours-day">Thursday</span><span class="hours-time">7:00 AM &ndash; 7:00 PM</span></li>
+            <li data-day="5"><span class="hours-day">Friday</span><span class="hours-time">7:00 AM &ndash; 7:00 PM</span></li>
+            <li data-day="6"><span class="hours-day">Saturday</span><span class="hours-time">8:00 AM &ndash; 5:00 PM</span></li>
+            <li data-day="0"><span class="hours-day">Sunday</span><span class="hours-time">By appointment</span></li>
+          </ul>
+          <div class="emergency-strip">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span><strong>24/7 Emergency:</strong> Call 770-364-5141 anytime &mdash; even after hours.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="form-card" id="schedule-form">
+        <h3 class="form-title">Request Service</h3>
+        <p class="form-sub">Fill out the form and we&rsquo;ll get back to you the same day. For emergencies, please call.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">First Name <span class="req">*</span></label>
+              <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+            </div>
+            <div class="form-field">
+              <label for="lastName">Last Name <span class="req">*</span></label>
+              <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="phone">Phone <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(770) 555-0123">
+            </div>
+            <div class="form-field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field full">
+              <label for="address">Service Address</label>
+              <input type="text" id="address" name="address" autocomplete="street-address" placeholder="Street, City, GA">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="service">What do you need help with? <span class="req">*</span></label>
+              <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option>AC Repair</option>
+                <option>AC Installation</option>
+                <option>Heating Repair</option>
+                <option>Heating Installation</option>
+                <option>Maintenance / Tune-Up</option>
+                <option>Indoor Air Quality</option>
+                <option>Plumbing</option>
+                <option>Electrical</option>
+                <option>Commercial HVAC-R</option>
+                <option>Comfort Club Membership</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="urgency">Urgency</label>
+              <select id="urgency" name="urgency">
+                <option>Emergency &mdash; ASAP</option>
+                <option selected>Within a few days</option>
+                <option>This week is fine</option>
+                <option>Just gathering quotes</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field full">
+              <label for="message">Tell us what&rsquo;s going on</label>
+              <textarea id="message" name="message" placeholder="What&rsquo;s the problem? When did it start? Any error codes? The more we know, the faster we can help."></textarea>
+            </div>
+          </div>
+
+          <label class="form-checkbox">
+            <input type="checkbox" id="consent" name="consent">
+            <span>I agree to be contacted by Happy HVAC Solutions about my request via phone, text, or email. Message rates may apply.</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send Request</button>
+          <p class="form-disclaimer">By submitting, you confirm the information is accurate. We never sell or share your contact info. For after-hours emergencies, please call <a href="tel:7703645141" style="color:var(--orange);font-weight:600;">770-364-5141</a>.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section" aria-labelledby="map-heading">
+  <div class="map-grid">
+    <div class="map-panel">
+      <span class="section-label">Find Us</span>
+      <h2 id="map-heading">Based in <em>Marietta</em></h2>
+      <p class="address">1988 Willeo Creek Pt<br>Marietta, GA 30068</p>
+      <p class="area">From here we cover Atlanta, Roswell, Alpharetta, Sandy Springs, Kennesaw, Woodstock, Canton, and most of North Georgia.</p>
+      <div class="map-actions">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=1988+Willeo+Creek+Pt,+Marietta,+GA+30068" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          Get Directions
+        </a>
+        <a href="https://maps.google.com/?q=1988+Willeo+Creek+Pt,+Marietta,+GA+30068" target="_blank" rel="noopener" class="btn btn-secondary">View on Google Maps</a>
+      </div>
+    </div>
+    <div class="map-embed">
+      <iframe
+        title="Happy HVAC Solutions location map"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=1988+Willeo+Creek+Pt,+Marietta,+GA+30068&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Service Area pills -->
+<section class="area-strip" aria-labelledby="area-heading">
+  <div class="container">
+    <div class="area-strip-head">
+      <h3 id="area-heading">Where We Work</h3>
+      <p>Proudly serving homeowners and businesses across these communities.</p>
+    </div>
+    <div class="area-pills">
+      <a href="Happy HVAC Atlanta.html" class="area-pill">Atlanta</a>
+      <a href="/hvac-marietta-ga/" class="area-pill">Marietta</a>
+      <a href="/hvac-alpharetta-ga/" class="area-pill">Alpharetta</a>
+      <a href="/hvac-roswell-ga/" class="area-pill">Roswell</a>
+      <a href="/hvac-sandy-springs-ga/" class="area-pill">Sandy Springs</a>
+      <a href="/hvac-kennesaw-ga/" class="area-pill">Kennesaw</a>
+      <a href="/hvac-woodstock-ga/" class="area-pill">Woodstock</a>
+      <a href="/hvac-acworth-ga/" class="area-pill">Acworth</a>
+      <a href="/hvac-canton-ga/" class="area-pill">Canton</a>
+      <a href="/hvac-johns-creek-ga/" class="area-pill">Johns Creek</a>
+      <a href="/hvac-dunwoody-ga/" class="area-pill">Dunwoody</a>
+      <a href="/hvac-smyrna-ga/" class="area-pill">Smyrna</a>
+      <a href="/hvac-cumming-ga/" class="area-pill">Cumming</a>
+      <a href="/hvac-east-cobb-ga/" class="area-pill">East Cobb</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Comfort can&rsquo;t <em>wait.</em></h2>
+    <p>If your AC, heat, or plumbing is on the fritz right now, don&rsquo;t bother with the form &mdash; just call.</p>
+    <div class="cta-actions">
+      <a href="tel:7703645141" class="btn btn-primary">Call 770-364-5141</a>
+      <a href="/happy-home-comfort-club-membership/" class="btn btn-secondary">Ask About Comfort Club</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/happy-hvac-animation.gif" alt="Happy HVAC Solutions">
+        <p>Family-owned HVAC, plumbing, electrical, and refrigeration services serving Atlanta and North Georgia since 2009. Licensed, insured, and committed to your comfort.</p>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13 1 .39 1.98.74 2.93a2 2 0 0 1-.45 2.11L7.91 9.03a16 16 0 0 0 6 6l1-1.09a2 2 0 0 1 2.11-.45c.95.35 1.93.61 2.93.74A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:7703645141">770-364-5141</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:zach@happyhvacsolutions.com">zach@happyhvacsolutions.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>1988 Willeo Creek Pt, Marietta, GA</span>
+        </div>
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.facebook.com/profile.php?id=61562722187512" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happyhvacsolutions/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.yelp.com/biz/happy-hvac-solutions-marietta" target="_blank" rel="noopener" aria-label="Yelp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.4 2.3v9.4c0 .9.6 1.4 1.3 1.1l3.7-1.4c.7-.3.9-1.2.4-2L15.9.7c-.5-.7-1.5-.4-1.5 1.6zm-1.6 14.3v5.1c0 1.7-.8 2-1.6 1.4l-2.9-2.4c-.7-.6-.6-1.6.1-2l3.4-2.6c.6-.5 1 0 1 .5zm1.4-2.7c0-.9.7-1.3 1.4-1l3.6 1.5c.8.3.9 1.3.2 2L17 18.6c-.6.6-1.4.4-1.7-.4l-1.1-3.4v-.9zM10.7 13c.7 0 1.1-.5.6-1.4L5.6 1c-.3-.6-1.3-.4-1.7.7C2.4 5.5 2 9.6 2.6 11.4c.2.6.7 1 1.5 1l6.6.6zm.6 2.4c.6-.6.4-1.4-.4-1.5l-3.5-.7c-.9-.2-1.6.5-1.4 1.5l.5 3.7c.1 1 1 1.4 1.7.7l3.1-3.7z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="Happy HVAC Air Conditioning.html">Air Conditioning</a></li>
+          <li><a href="/heating-solutions/">Heating</a></li>
+          <li><a href="/indoor-air-quality-solutions/">Indoor Air Quality</a></li>
+          <li><a href="/plumbing-solutions/">Plumbing</a></li>
+          <li><a href="/electrical-solutions/">Electrical</a></li>
+          <li><a href="/commercial-hvac-r-in-atlanta-north-georgia/">Commercial HVAC-R</a></li>
+          <li><a href="/financing-options/">Financing Options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="Happy HVAC Atlanta.html">Atlanta, GA</a></li>
+          <li><a href="/hvac-marietta-ga/">Marietta, GA</a></li>
+          <li><a href="/hvac-alpharetta-ga/">Alpharetta, GA</a></li>
+          <li><a href="/hvac-roswell-ga/">Roswell, GA</a></li>
+          <li><a href="/hvac-kennesaw-ga/">Kennesaw, GA</a></li>
+          <li><a href="/hvac-woodstock-ga/">Woodstock, GA</a></li>
+          <li><a href="/hvac-sandy-springs-ga/">Sandy Springs, GA</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="Happy HVAC About.html">About Us</a></li>
+          <li><a href="Happy HVAC Testimonials.html">Reviews</a></li>
+          <li><a href="Happy HVAC Comfort Club.html">Comfort Club</a></li>
+          <li><a href="Happy HVAC Contact.html">Contact Us</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Happy HVAC Solutions &copy; <span id="year"></span>. All Rights Reserved. Serving Atlanta &amp; North Georgia.</p>
+      <div class="footer-bottom-links">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-use/">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Highlight today's hours
+  const today = new Date().getDay();
+  const todayLi = document.querySelector(`#hoursList li[data-day="${today}"]`);
+  if (todayLi) todayLi.classList.add('today');
+
+  // Form handler (demo — no backend)
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+    setTimeout(() => {
+      submitBtn.textContent = '✓ Got it — we’ll be in touch';
+      submitBtn.style.background = '#2E7D32';
+      form.reset();
+      setTimeout(() => {
+        submitBtn.textContent = 'Send Request';
+        submitBtn.style.background = '';
+        submitBtn.disabled = false;
+      }, 4000);
+    }, 700);
+  });
+</script>
+
+</body>
+</html>
