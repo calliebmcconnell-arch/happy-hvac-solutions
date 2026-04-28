@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cap_mohh7zgp_chx0b4",
+    "selector": "div.bt_bb_background_image_holder",
+    "label": "div.bt_bb_background_image_holder",
+    "tag": "div",
+    "url": "https://happyhvacsolutions.com/about-us/",
+    "title": "About us – Happy HVAC Solutions",
+    "timestamp": "2026-04-27T17:33:57.193Z",
+    "innerText": "",
+    "outerHTML": "<div class=\"bt_bb_background_image_holder btLazyLoadBackground bt_bb_parallax btLazyLoaded\" data-background_image_src=\"https://happyhvacsolutions.com/wp-content/uploads/2024/09/Headers-1800x800-37.png\" data-parallax=\"0.8\" data-parallax-offset=\"0\" data-parallax-zoom-start=\"1\" data-parallax-zoom-end=\"1\" data-parallax-blur-start=\"0\" data-parallax-blur-end=\"0\" data-parallax-opacity-start=\"1\" data-parallax-opacity-end=\"1\" style=\"background-image: url(&quot;https://happyhvacsolutions.com/wp-content/uploads/2024/09/Headers-1800x800-37.png&quot;); background-position-y: -140.458px;\"></div>",
+    "rect": {
+      "x": 0,
+      "y": 351,
+      "width": 1280,
+      "height": 715
+    },
+    "computedStyles": {
+      "display": "block",
+      "position": "absolute",
+      "top": "0px",
+      "right": "0px",
+      "bottom": "0px",
+      "left": "0px",
+      "width": "1280px",
+      "height": "714.781px",
+      "border": "0px none rgb(255, 255, 255)",
+      "box-sizing": "border-box",
+      "background": "rgba(0, 0, 0, 0) url(\"https://happyhvacsolutions.com/wp-content/uploads/2024/09/Headers-1800x800-37.png\") no-repeat scroll 50% -140.458px / cover padding-box border-box",
+      "color": "rgb(255, 255, 255)",
+      "font-family": "Roboto, Arial, sans-serif",
+      "font-size": "16px",
+      "line-height": "27.2px",
+      "text-decoration": "none",
+      "transition": "all"
+    },
+    "cssRules": [
+      {
+        "selector": ".bt_bb_section .bt_bb_background_image_holder_wrapper .bt_bb_background_image_holder",
+        "css": "position: absolute; inset: 0px; background-size: inherit; background-position: inherit; background-repeat: no-repeat; background-attachment: scroll;",
+        "media": "all"
+      },
+      {
+        "selector": "html[data-bt_bb_screen_resolution=\"xl\"].bt_bb_backgroud_fixed_supported .bt_bb_parallax",
+        "css": "background-size: cover; background-position: center center; background-repeat: no-repeat;",
+        "media": "all"
+      },
+      {
+        "selector": "html[data-bt_bb_screen_resolution=\"xl\"].bt_bb_backgroud_fixed_supported .bt_bb_parallax.bt_bb_background_image_holder",
+        "css": "transform-origin: center center;",
+        "media": "all"
+      },
+      {
+        "selector": ":focus, *",
+        "css": "outline: 0px;",
+        "media": "all"
+      },
+      {
+        "selector": "*, ::after, ::before",
+        "css": "box-sizing: border-box; padding: 0px; margin: 0px; background-repeat: no-repeat;",
+        "media": "all"
+      },
+      {
+        "selector": ".bt_bb_parallax",
+        "css": "transform: none !important; background-attachment: inherit !important; transition-property: none !important; background-position: center center !important;",
+        "media": "(max-width: 991px)"
+      },
+      {
+        "selector": ".bt_bb_parallax",
+        "css": "transform: none; background-attachment: local; background-position: 0px 0px !important;",
+        "media": "(-ms-high-contrast: none), (-ms-high-contrast: active)"
+      },
+      {
+        "selector": "*",
+        "css": "box-sizing: border-box !important; background: rgb(255, 255, 255) !important; color: rgb(0, 0, 0) !important;",
+        "media": "print"
+      }
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "cap_mohcz5p9_3oy0f7",
+    "selector": "img.attachment-full",
+    "label": "img.attachment-full",
+    "tag": "img",
+    "url": "https://happyhvacsolutions.com/",
+    "title": "Happy HVAC Solutions",
+    "timestamp": "2026-04-27T15:35:06.910Z",
+    "innerText": "",
+    "outerHTML": "<img fetchpriority=\"high\" decoding=\"async\" width=\"900\" height=\"506\" src=\"https://happyhvacsolutions.com/wp-content/uploads/2024/09/Happy-HVAC-Solutions-Gif.gif\" class=\"attachment-full size-full\" alt=\"https://happyhvacsolutions.com/wp-content/uploads/2024/09/Happy-HVAC-Solutions-Gif.gif\" data-full_image_src=\"https://happyhvacsolutions.com/wp-content/uploads/2024/09/Happy-HVAC-Solutions-Gif.gif\" title=\"Happy HVAC Solutions - Gif\">",
+    "rect": {
+      "x": 527,
+      "y": 95,
+      "width": 470,
+      "height": 264
+    },
+    "computedStyles": {
+      "display": "block",
+      "width": "470px",
+      "height": "264.234px",
+      "border": "0px none rgb(255, 255, 255)",
+      "box-sizing": "border-box",
+      "background": "rgba(0, 0, 0, 0) none no-repeat scroll 0% 0% / auto padding-box border-box",
+      "color": "rgb(255, 255, 255)",
+      "font-family": "Roboto, Arial, sans-serif",
+      "font-size": "16px",
+      "line-height": "0px",
+      "text-align": "center",
+      "text-decoration": "none",
+      "overflow": "clip",
+      "transition": "all",
+      "cursor": "pointer"
+    },
+    "cssRules": [
+      {
+        "selector": ".bt_bb_image img",
+        "css": "display: block; margin: 0px; line-height: 0; max-width: 100%; height: auto;",
+        "media": "all"
+      },
+      {
+        "selector": ".bt_bb_image.bt_bb_shape_square img",
+        "css": "border-radius: 0px;",
+        "media": "all"
+      },
+      {
+        "selector": ".slick-slide img",
+        "css": "display: block;",
+        "media": "all"
+      },
+      {
+        "selector": ":focus, *",
+        "css": "outline: 0px;",
+        "media": "all"
+      },
+      {
+        "selector": "*, ::after, ::before",
+        "css": "box-sizing: border-box; padding: 0px; margin: 0px; background-repeat: no-repeat;",
+        "media": "all"
+      },
+      {
+        "selector": "img, figure",
+        "css": "max-width: 100%; height: auto;",
+        "media": "all"
+      },
+      {
+        "selector": "a img",
+        "css": "border-width: medium; border-style: none; border-color: currentcolor; border-image: initial;",
+        "media": "all"
+      },
+      {
+        "selector": "img",
+        "css": "height: auto; max-width: 100%;",
+        "media": "all"
+      },
+      {
+        "selector": "*",
+        "css": "box-sizing: border-box !important; background: rgb(255, 255, 255) !important; color: rgb(0, 0, 0) !important;",
+        "media": "print"
+      }
+    ]
+  }
+]

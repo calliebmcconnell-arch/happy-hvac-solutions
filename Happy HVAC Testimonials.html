@@ -275,9 +275,7 @@
     .header-inner { gap: 16px; }
     .logo img { height: 84px; width: 84px; }
   }
-  @media (max-width: 760px) {
-    nav { display: none; }
-  }
+  
   @media (max-width: 1000px) {
     .hero-grid { grid-template-columns: 1fr; gap: 40px; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -291,6 +289,101 @@
     section { padding: 72px 0; }
     .footer-grid { grid-template-columns: 1fr; }
   }
+
+  
+  /* ── MOBILE NAV TOGGLE ── */
+  .mobile-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    width: 44px; height: 44px;
+    cursor: pointer;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-900);
+  }
+  .mobile-toggle svg { display: block; }
+  .mobile-toggle .icon-close { display: none; }
+  body.nav-open .mobile-toggle .icon-open { display: none; }
+  body.nav-open .mobile-toggle .icon-close { display: block; }
+  body.nav-open { overflow: hidden; }
+
+  .nav-backdrop {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(15,22,40,0.55);
+    z-index: 99;
+    backdrop-filter: blur(2px);
+  }
+  body.nav-open .nav-backdrop { display: block; }
+
+
+  @media (max-width: 880px) {
+    .mobile-toggle { display: inline-flex; }
+    nav {
+      position: fixed;
+      top: 0; right: 0; bottom: 0;
+      width: min(360px, 86vw);
+      background: var(--white);
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 0;
+      padding: 88px 0 32px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 150;
+      overflow-y: auto;
+      box-shadow: -16px 0 40px rgba(0,0,0,0.18);
+      border-left: 4px solid transparent;
+      border-image: var(--tiedye) 1;
+    }
+    body.nav-open nav {
+      transform: translateX(0);
+    }
+    nav a {
+      padding: 16px 24px !important;
+      font-size: 18px !important;
+      letter-spacing: 0.04em !important;
+      border-bottom: 1px solid var(--gray-200);
+      width: 100%;
+      display: block;
+      text-align: left;
+    }
+    nav a.nav-cta,
+    nav a.nav-cta-club {
+      margin: 12px 24px !important;
+      width: auto !important;
+      text-align: center !important;
+      border-radius: var(--radius) !important;
+      border-bottom: 0 !important;
+    }
+    nav a.nav-cta-club {
+      padding: 16px 24px 16px 44px !important;
+      font-size: 14px !important;
+    }
+    nav a.nav-cta-club::before {
+      left: 22px !important;
+    }
+    .nav-dropdown { width: 100%; }
+    .nav-dropdown > a::after { content: ""; }
+    .dropdown-menu {
+      display: block !important;
+      position: static;
+      box-shadow: none;
+      border: 0;
+      padding: 0;
+      background: var(--off-white);
+      min-width: 0;
+    }
+    .dropdown-menu a {
+      padding: 14px 24px 14px 44px !important;
+      font-size: 15px !important;
+      border-bottom: 1px solid var(--gray-200);
+    }
+  }
+
 </style>
 </head>
 <body>
@@ -321,7 +414,11 @@
       <a href="Happy HVAC Homepage.html" class="logo" aria-label="Happy HVAC Solutions Home">
         <img src="assets/happy-hvac-logo.png" alt="Happy HVAC Solutions logo" width="104" height="104">
       </a>
-      <nav aria-label="Main navigation">
+              <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+          <svg class="icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+        </button>
+      <nav id="primary-nav" aria-label="Main navigation">
         <a href="Happy HVAC Air Conditioning.html">Air Conditioning</a>
         <a href="/heating-solutions/">Heating</a>
         <a href="/indoor-air-quality-solutions/">Indoor Air Quality</a>
@@ -347,6 +444,7 @@
     </div>
   </div>
 </header>
+<div class="nav-backdrop" aria-hidden="true"></div>
 
 <!-- Page Hero -->
 <section class="page-hero" aria-label="Customer Testimonials">
@@ -605,27 +703,38 @@
 </footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Filter
-  const tabs = document.querySelectorAll('.filter-tab');
-  const cards = document.querySelectorAll('.wall-card');
-  const countEl = document.getElementById('visibleCount');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      const filter = tab.dataset.filter;
-      let visible = 0;
-      cards.forEach(card => {
-        const tags = (card.dataset.tags || '').split(' ');
-        const show = filter === 'all' || tags.includes(filter);
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
-      });
-      countEl.textContent = visible;
+  // Mobile nav toggle
+  (function() {
+    var toggle = document.querySelector('.mobile-toggle');
+    var nav = document.getElementById('primary-nav');
+    var backdrop = document.querySelector('.nav-backdrop');
+    if (!toggle || !nav) return;
+    function close() {
+      document.body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+    function open() {
+      document.body.classList.add('nav-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+    toggle.addEventListener('click', function() {
+      if (document.body.classList.contains('nav-open')) close();
+      else open();
     });
-  });
+    if (backdrop) backdrop.addEventListener('click', close);
+    // close when clicking a link
+    nav.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A' && e.target.getAttribute('href') !== '#') close();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') close();
+    });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 880) close();
+    });
+  })();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
