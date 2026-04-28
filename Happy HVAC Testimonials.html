@@ -368,9 +368,10 @@
       left: 22px !important;
     }
     .nav-dropdown { width: 100%; }
-    .nav-dropdown > a::after { content: ""; }
+    .nav-dropdown > a::after { content: " ▾"; font-size: 11px; }
+    .nav-dropdown.open > a::after { content: " ▴"; font-size: 11px; }
     .dropdown-menu {
-      display: block !important;
+      display: none;
       position: static;
       box-shadow: none;
       border: 0;
@@ -378,6 +379,7 @@
       background: var(--off-white);
       min-width: 0;
     }
+    .nav-dropdown.open .dropdown-menu { display: block; }
     .dropdown-menu a {
       padding: 14px 24px 14px 44px !important;
       font-size: 15px !important;
@@ -689,14 +691,14 @@
           <li><a href="Happy HVAC Comfort Club.html">Comfort Club</a></li>
           <li><a href="Happy HVAC Contact.html">Contact Us</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="Happy HVAC Privacy Policy.html">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>Happy HVAC Solutions &copy; <span id="year"></span>. All Rights Reserved. Serving Atlanta &amp; North Georgia.</p>
       <div class="footer-bottom-links">
-        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="Happy HVAC Privacy Policy.html">Privacy Policy</a>
         <a href="/terms-of-use/">Terms of Use</a>
       </div>
     </div>
@@ -723,6 +725,17 @@
       else open();
     });
     if (backdrop) backdrop.addEventListener('click', close);
+    // Mobile dropdown accordion
+    var dropdownLink = nav ? nav.querySelector('.nav-dropdown > a') : null;
+    var navDropdown = nav ? nav.querySelector('.nav-dropdown') : null;
+    if (dropdownLink && navDropdown) {
+      dropdownLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        navDropdown.classList.toggle('open');
+      });
+    }
+    var origClose = close;
+    close = function() { origClose(); if (navDropdown) navDropdown.classList.remove('open'); };
     // close when clicking a link
     nav.addEventListener('click', function(e) {
       if (e.target.tagName === 'A' && e.target.getAttribute('href') !== '#') close();

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Happy HVAC Solutions &mdash; Marietta, GA</title>
+<meta name="description" content="Privacy Policy for Happy HVAC Solutions LLC. Learn how we collect, use, and protect your personal information.">
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #F26B1F;
+    --orange-dark: #D9551A;
+    --pink: #E91E63;
+    --magenta: #FF2D87;
+    --yellow: #FFC93C;
+    --sky: #29B6F6;
+    --blue: #243B6B;
+    --blue-dark: #1A2C53;
+    --white: #FFFFFF;
+    --off-white: #FFF9F2;
+    --gray-100: #F4EFE8;
+    --gray-200: #E5DED3;
+    --gray-400: #9B9890;
+    --gray-600: #5C5A55;
+    --gray-900: #1F2A44;
+    --tiedye: linear-gradient(135deg, #FFC93C 0%, #F26B1F 25%, #E91E63 55%, #FF2D87 75%, #29B6F6 100%);
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+    --max-w: 1200px;
+    --radius: 4px;
+    --radius-lg: 8px;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--gray-900); background: var(--white); line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+  /* Top bar */
+  .topbar { background: var(--blue); color: var(--white); font-size: 13px; font-weight: 500; padding: 8px 0; }
+  .topbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .topbar-left { display: flex; gap: 24px; flex-wrap: wrap; }
+  .topbar-item { display: inline-flex; align-items: center; gap: 6px; }
+  .topbar-right a { font-weight: 600; }
+  .topbar-right a:hover { color: var(--orange); }
+
+  header { background: var(--white); border-bottom: 1px solid var(--gray-200); position: sticky; top: 0; z-index: 200; }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 120px; padding: 14px 0; gap: 24px; }
+  .logo { display: flex; align-items: center; }
+  .logo img { height: 104px; width: 104px; object-fit: contain; display: block; }
+  nav { display: flex; align-items: center; gap: 4px; }
+  nav a { padding: 10px 14px; font-family: var(--font-display); font-weight: 600; font-size: 16px; letter-spacing: 0.02em; text-transform: uppercase; color: var(--gray-900); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--orange); }
+  nav a.nav-cta { background: var(--orange); color: var(--white); padding: 12px 18px; border-radius: var(--radius); margin-left: 8px; }
+  nav a.nav-cta:hover { background: var(--orange-dark); color: var(--white); }
+  nav a.nav-cta-club {
+    position: relative; background: var(--tiedye); color: var(--white);
+    font-family: var(--font-display); font-size: 13px; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 12px 18px 12px 36px; border-radius: var(--radius); margin-left: 4px;
+    box-shadow: 0 6px 18px rgba(242,107,31,0.3); transition: transform 0.2s, box-shadow 0.2s;
+  }
+  nav a.nav-cta-club::before {
+    content: "★"; position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    font-size: 14px; color: #FFE08A; text-shadow: 0 0 6px rgba(255,224,138,0.7);
+  }
+  nav a.nav-cta-club:hover { transform: translateY(-1px); box-shadow: 0 10px 22px rgba(242,107,31,0.4); color: var(--white) !important; }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: 11px; }
+  .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: var(--white); min-width: 220px; border: 1px solid var(--gray-200); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu a { display: block; padding: 10px 16px; font-size: 14px; }
+  .dropdown-menu a:hover { background: var(--off-white); color: var(--orange); }
+
+  /* Mobile nav */
+  .mobile-toggle { display: none; background: none; border: 0; width: 44px; height: 44px; cursor: pointer; padding: 0; align-items: center; justify-content: center; color: var(--gray-900); }
+  .mobile-toggle svg { display: block; }
+  .mobile-toggle .icon-close { display: none; }
+  body.nav-open .mobile-toggle .icon-open { display: none; }
+  body.nav-open .mobile-toggle .icon-close { display: block; }
+  body.nav-open { overflow: hidden; }
+  .nav-backdrop { display: none; position: fixed; inset: 0; background: rgba(15,22,40,0.55); z-index: 99; backdrop-filter: blur(2px); }
+  body.nav-open .nav-backdrop { display: block; }
+
+  /* Page hero */
+  .page-hero { position: relative; color: var(--white); overflow: hidden; padding: 72px 0 80px; background: var(--blue-dark); }
+  .page-hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 100% 0%, rgba(41,182,246,0.28) 0%, transparent 60%),
+                radial-gradient(ellipse at 0% 100%, rgba(233,30,99,0.22) 0%, transparent 55%);
+  }
+  .page-hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--tiedye); }
+  .page-hero .container { position: relative; z-index: 1; }
+  .crumbs { font-family: var(--font-display); text-transform: uppercase; font-size: 13px; letter-spacing: 0.18em; color: rgba(255,255,255,0.7); margin-bottom: 18px; }
+  .crumbs a { color: rgba(255,255,255,0.85); }
+  .crumbs a:hover { color: var(--yellow); }
+  .crumbs span { margin: 0 8px; opacity: 0.5; }
+  .page-hero h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(40px, 6vw, 64px); line-height: 1.02; letter-spacing: -0.01em; text-transform: uppercase; margin-bottom: 16px; }
+  .page-hero h1 em { font-style: normal; background: var(--tiedye); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .page-hero p.lead { font-size: 17px; line-height: 1.55; color: rgba(255,255,255,0.82); max-width: 560px; }
+
+  /* Policy content */
+  .policy-body { padding: 80px 0 96px; background: var(--white); }
+  .policy-layout { display: grid; grid-template-columns: 240px 1fr; gap: 56px; align-items: start; }
+
+  /* Sticky TOC */
+  .policy-toc { position: sticky; top: 140px; }
+  .policy-toc-inner { background: var(--off-white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 24px; }
+  .policy-toc-inner h3 { font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 14px; }
+  .policy-toc-inner ol { list-style: none; counter-reset: toc; }
+  .policy-toc-inner li { counter-increment: toc; margin-bottom: 6px; }
+  .policy-toc-inner a { font-size: 14px; color: var(--gray-600); display: block; padding: 5px 0; border-left: 2px solid transparent; padding-left: 10px; transition: color 0.15s, border-color 0.15s; }
+  .policy-toc-inner a:hover { color: var(--orange); border-left-color: var(--orange); }
+  .policy-toc-inner a::before { content: counter(toc) ". "; font-weight: 600; color: var(--gray-400); }
+
+  /* Policy sections */
+  .policy-content { max-width: 780px; }
+  .policy-section { margin-bottom: 52px; scroll-margin-top: 140px; }
+  .policy-section:last-child { margin-bottom: 0; }
+  .policy-section-num {
+    font-family: var(--font-display); font-weight: 700; font-size: 12px;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    background: var(--tiedye); -webkit-background-clip: text; background-clip: text; color: transparent;
+    margin-bottom: 8px;
+  }
+  .policy-section h2 {
+    font-family: var(--font-display); font-weight: 800;
+    font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1;
+    letter-spacing: -0.005em; text-transform: uppercase;
+    color: var(--gray-900); margin-bottom: 18px;
+  }
+  .policy-section p { font-size: 16px; color: var(--gray-600); line-height: 1.75; margin-bottom: 14px; }
+  .policy-section p:last-child { margin-bottom: 0; }
+  .policy-section p strong { color: var(--gray-900); font-weight: 600; }
+  .policy-section ul { list-style: none; margin: 14px 0; }
+  .policy-section ul li {
+    font-size: 16px; color: var(--gray-600); line-height: 1.7;
+    padding: 10px 0 10px 28px; position: relative;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .policy-section ul li:first-child { border-top: 1px solid var(--gray-200); }
+  .policy-section ul li::before {
+    content: ""; position: absolute; left: 0; top: 18px;
+    width: 14px; height: 14px; border-radius: 50%;
+    background: var(--tiedye);
+  }
+  .policy-section ul li strong { color: var(--gray-900); font-weight: 600; display: block; margin-bottom: 2px; }
+
+  /* Contact card inside policy */
+  .policy-contact-card {
+    background: var(--blue-dark); color: var(--white);
+    border-radius: var(--radius-lg); padding: 32px;
+    margin-top: 24px; position: relative; overflow: hidden;
+  }
+  .policy-contact-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--tiedye); }
+  .policy-contact-card h3 { font-family: var(--font-display); font-weight: 700; font-size: 22px; text-transform: uppercase; margin-bottom: 18px; }
+  .policy-contact-card .contact-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 15px; color: rgba(255,255,255,0.85); }
+  .policy-contact-card a:hover { color: var(--yellow); }
+  .policy-contact-card .contact-row svg { flex-shrink: 0; opacity: 0.7; }
+
+  /* Effective date bar */
+  .policy-meta {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--off-white); border: 1px solid var(--gray-200);
+    border-radius: var(--radius); padding: 10px 18px;
+    font-family: var(--font-display); font-size: 13px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray-600);
+    margin-bottom: 48px;
+  }
+  .policy-meta-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--tiedye); }
+
+  /* Footer */
+  footer { background: var(--blue-dark); color: rgba(255,255,255,0.75); padding: 64px 0 0; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .footer-brand img { width: 220px; max-height: 140px; object-fit: contain; margin-bottom: 16px; display: block; }
+  .footer-brand p { font-size: 14px; line-height: 1.65; margin-bottom: 20px; }
+  .footer-contact-item { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 14px; }
+  .footer-contact-item a:hover { color: var(--orange); }
+  .footer-social { display: flex; gap: 10px; margin-top: 18px; }
+  .footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); color: rgba(255,255,255,0.85); transition: background 0.2s, color 0.2s, transform 0.2s; }
+  .footer-social a:hover { background: var(--orange); border-color: var(--orange); color: #fff; transform: translateY(-2px); }
+  .footer-col h4 { font-family: var(--font-display); font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--white); margin-bottom: 16px; }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 8px; font-size: 14px; }
+  .footer-col a:hover { color: var(--orange); }
+  .footer-bottom { padding: 20px 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; font-size: 13px; }
+  .footer-bottom-links { display: flex; gap: 20px; }
+
+  @media (max-width: 1024px) {
+    .policy-layout { grid-template-columns: 1fr; }
+    .policy-toc { position: static; }
+    .policy-toc-inner { display: none; }
+  }
+  @media (max-width: 900px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .topbar-left { gap: 14px; }
+    .topbar-item:nth-child(2) { display: none; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .header-inner { min-height: 88px; }
+    .logo img { height: 72px; width: 72px; }
+  }
+  @media (max-width: 880px) {
+    .mobile-toggle { display: inline-flex; position: relative; z-index: 300; }
+    .logo { position: relative; z-index: 300; }
+    nav {
+      position: fixed; top: 0; right: 0; bottom: 0;
+      width: min(360px, 86vw);
+      background: var(--white); flex-direction: column;
+      align-items: stretch; justify-content: flex-start;
+      gap: 0; padding: 130px 0 32px;
+      transform: translateX(100%); transition: transform 0.3s ease;
+      z-index: 150; overflow-y: auto;
+      box-shadow: -16px 0 40px rgba(0,0,0,0.18);
+      border-left: 4px solid transparent; border-image: var(--tiedye) 1;
+    }
+    body.nav-open nav { transform: translateX(0); }
+    nav a { padding: 16px 24px !important; font-size: 18px !important; letter-spacing: 0.04em !important; border-bottom: 1px solid var(--gray-200); width: 100%; display: block; text-align: left; }
+    nav a.nav-cta, nav a.nav-cta-club { margin: 12px 24px !important; width: auto !important; text-align: center !important; border-radius: var(--radius) !important; border-bottom: 0 !important; }
+    nav a.nav-cta-club { padding: 16px 24px 16px 44px !important; font-size: 14px !important; }
+    nav a.nav-cta-club::before { left: 22px !important; }
+    .nav-dropdown { width: 100%; }
+    .nav-dropdown > a::after { content: " ▾"; font-size: 11px; }
+    .nav-dropdown.open > a::after { content: " ▴"; font-size: 11px; }
+    .dropdown-menu { display: none; position: static; box-shadow: none; border: 0; padding: 0; background: var(--off-white); min-width: 0; }
+    .nav-dropdown.open .dropdown-menu { display: block; }
+    .dropdown-menu a { padding: 14px 24px 14px 44px !important; font-size: 15px !important; border-bottom: 1px solid var(--gray-200); }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span class="topbar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Open 24/7 for Emergencies
+      </span>
+      <span class="topbar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Serving Atlanta &amp; North Georgia
+      </span>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:7703645141">Call 770-364-5141</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="Happy HVAC Homepage.html" class="logo" aria-label="Happy HVAC Solutions Home">
+        <img src="assets/happy-hvac-logo.png" alt="Happy HVAC Solutions logo" width="104" height="104">
+      </a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg class="icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+      </button>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="Happy HVAC Air Conditioning.html">Air Conditioning</a>
+        <a href="/heating-solutions/">Heating</a>
+        <a href="/indoor-air-quality-solutions/">Indoor Air Quality</a>
+        <a href="Happy HVAC Testimonials.html">Reviews</a>
+        <a href="Happy HVAC About.html">About</a>
+        <div class="nav-dropdown">
+          <a href="#">More Services</a>
+          <div class="dropdown-menu">
+            <a href="/plumbing-solutions/">Plumbing</a>
+            <a href="/electrical-solutions/">Electrical</a>
+            <a href="/commercial-hvac-r-in-atlanta-north-georgia/">Commercial HVAC-R</a>
+            <a href="/restaurant-refrigeration-services/">Restaurant &amp; Refrigeration</a>
+            <a href="/water-heater/">Water Heater</a>
+            <a href="/duct-work/">Duct Work</a>
+            <a href="/hvac-r-design-installation/">HVAC-R Design &amp; Installation</a>
+            <a href="/smart-home-technology/">Smart Home Technology</a>
+            <a href="/financing-options/">Financing Options</a>
+          </div>
+        </div>
+        <a href="Happy HVAC Comfort Club.html" class="nav-cta-club">Ask us about Comfort Club</a>
+        <a href="Happy HVAC Contact.html" class="nav-cta">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop" aria-hidden="true"></div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <div class="crumbs">
+      <a href="Happy HVAC Homepage.html">Home</a>
+      <span>›</span>
+      Privacy Policy
+    </div>
+    <h1>Privacy <em>Policy</em></h1>
+    <p class="lead">How Happy HVAC Solutions LLC collects, uses, and protects your personal information.</p>
+  </div>
+</div>
+
+<!-- Policy Body -->
+<section class="policy-body">
+  <div class="container">
+    <div class="policy-layout">
+
+      <!-- Sticky Table of Contents -->
+      <aside class="policy-toc" aria-label="Table of contents">
+        <div class="policy-toc-inner">
+          <h3>Contents</h3>
+          <ol>
+            <li><a href="#information-we-collect">Information We Collect</a></li>
+            <li><a href="#how-we-use">How We Use Your Information</a></li>
+            <li><a href="#disclosure">Disclosure of Information</a></li>
+            <li><a href="#cookies">Cookies &amp; Tracking</a></li>
+            <li><a href="#data-security">Data Security</a></li>
+            <li><a href="#third-party-links">Third-Party Links</a></li>
+            <li><a href="#your-rights">Your Rights</a></li>
+            <li><a href="#changes">Changes to This Policy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ol>
+        </div>
+      </aside>
+
+      <!-- Policy Content -->
+      <div class="policy-content">
+
+        <div class="policy-meta">
+          <span class="policy-meta-dot"></span>
+          Effective Date: <strong>2025</strong> &mdash; Happy HVAC Solutions LLC
+        </div>
+
+        <p style="font-size:17px;color:var(--gray-600);line-height:1.75;margin-bottom:48px;">
+          Happy HVAC Solutions LLC ("we", "our", "us") is committed to protecting the privacy of our customers and website visitors. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit <strong>happyhvacsolutions.com</strong>, use our services, or interact with us in other ways.
+          <br><br>
+          By accessing our website or using our services, you agree to the terms of this Privacy Policy. If you do not agree, please do not access the site or use our services.
+        </p>
+
+        <div class="policy-section" id="information-we-collect">
+          <div class="policy-section-num">Section 01</div>
+          <h2>Information We Collect</h2>
+          <p>We may collect the following types of information:</p>
+          <ul>
+            <li><strong>Personal Information</strong>Includes name, email address, phone number, billing address, and any other information you voluntarily provide when filling out forms or requesting services.</li>
+            <li><strong>Non-Personal Information</strong>Includes data such as IP address, browser type, operating system, and browsing activity. This data is collected through cookies and other tracking technologies.</li>
+            <li><strong>Payment Information</strong>When you make a purchase or payment for services, we may collect payment information such as credit card details. Payment information is processed by third-party payment processors and is not stored on our servers.</li>
+          </ul>
+        </div>
+
+        <div class="policy-section" id="how-we-use">
+          <div class="policy-section-num">Section 02</div>
+          <h2>How We Use Your Information</h2>
+          <p>We use the information we collect to:</p>
+          <ul>
+            <li>Provide, operate, and maintain our services.</li>
+            <li>Process and fulfill orders, and send confirmations.</li>
+            <li>Respond to customer service requests and support.</li>
+            <li>Improve our website and services through analytics.</li>
+            <li>Send promotional materials, updates, and marketing communications (you can opt out at any time).</li>
+          </ul>
+        </div>
+
+        <div class="policy-section" id="disclosure">
+          <div class="policy-section-num">Section 03</div>
+          <h2>Disclosure of Information</h2>
+          <p>We do not sell, rent, or lease your personal information to third parties. We may share your information with trusted third-party service providers for the following purposes:</p>
+          <ul>
+            <li>Payment processing.</li>
+            <li>Website hosting and analytics.</li>
+            <li>Email communication platforms.</li>
+          </ul>
+          <p>These third parties have access to your information only to perform specific tasks on our behalf and are obligated to protect your information.</p>
+          <p>We may also disclose your information if required by law or to protect our rights, property, or safety.</p>
+        </div>
+
+        <div class="policy-section" id="cookies">
+          <div class="policy-section-num">Section 04</div>
+          <h2>Cookies &amp; Tracking Technologies</h2>
+          <p>Our website uses cookies to improve user experience, analyze traffic, and serve targeted advertisements. Cookies are small text files stored on your device by a website. You can control the use of cookies through your browser settings.</p>
+        </div>
+
+        <div class="policy-section" id="data-security">
+          <div class="policy-section-num">Section 05</div>
+          <h2>Data Security</h2>
+          <p>We take reasonable measures to protect your personal information from unauthorized access, alteration, or disclosure. However, no method of data transmission over the internet is 100% secure, and we cannot guarantee the absolute security of your information.</p>
+        </div>
+
+        <div class="policy-section" id="third-party-links">
+          <div class="policy-section-num">Section 06</div>
+          <h2>Third-Party Links</h2>
+          <p>Our website may contain links to third-party websites or services that are not operated by us. We are not responsible for the privacy practices of these third-party websites, and we encourage you to review their privacy policies.</p>
+        </div>
+
+        <div class="policy-section" id="your-rights">
+          <div class="policy-section-num">Section 07</div>
+          <h2>Your Rights</h2>
+          <p>Depending on your location, you may have certain rights regarding your personal information, including:</p>
+          <ul>
+            <li>The right to access, update, or delete your personal information.</li>
+            <li>The right to withdraw consent for data processing.</li>
+            <li>The right to opt out of marketing communications.</li>
+          </ul>
+          <p>To exercise these rights, please contact us using the information below.</p>
+        </div>
+
+        <div class="policy-section" id="changes">
+          <div class="policy-section-num">Section 08</div>
+          <h2>Changes to This Policy</h2>
+          <p>We reserve the right to update or change this Privacy Policy at any time. Changes will be effective immediately upon posting on our website. We encourage you to review this policy periodically.</p>
+        </div>
+
+        <div class="policy-section" id="contact">
+          <div class="policy-section-num">Section 09</div>
+          <h2>Contact Us</h2>
+          <p>If you have any questions or concerns about this Privacy Policy or the handling of your personal information, please contact us:</p>
+          <div class="policy-contact-card">
+            <h3>Happy HVAC Solutions LLC</h3>
+            <div class="contact-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13 1 .39 1.98.74 2.93a2 2 0 0 1-.45 2.11L7.91 9.03a16 16 0 0 0 6 6l1-1.09a2 2 0 0 1 2.11-.45c.95.35 1.93.61 2.93.74A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:7703645141">770-364-5141</a>
+            </div>
+            <div class="contact-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:zach@happyhvacsolutions.com">zach@happyhvacsolutions.com</a>
+            </div>
+            <div class="contact-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Marietta, GA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/happy-hvac-animation.gif" alt="Happy HVAC Solutions">
+        <p>Family-owned HVAC, plumbing, electrical, and refrigeration services serving Atlanta and North Georgia since 2009. Licensed, insured, and committed to your comfort.</p>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13 1 .39 1.98.74 2.93a2 2 0 0 1-.45 2.11L7.91 9.03a16 16 0 0 0 6 6l1-1.09a2 2 0 0 1 2.11-.45c.95.35 1.93.61 2.93.74A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:7703645141">770-364-5141</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:zach@happyhvacsolutions.com">zach@happyhvacsolutions.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>1988 Willeo Creek Pt, Marietta, GA</span>
+        </div>
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.facebook.com/profile.php?id=61562722187512" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happyhvacsolutions/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.yelp.com/biz/happy-hvac-solutions-marietta" target="_blank" rel="noopener" aria-label="Yelp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14.4 2.3v9.4c0 .9.6 1.4 1.3 1.1l3.7-1.4c.7-.3.9-1.2.4-2L15.9.7c-.5-.7-1.5-.4-1.5 1.6zm-1.6 14.3v5.1c0 1.7-.8 2-1.6 1.4l-2.9-2.4c-.7-.6-.6-1.6.1-2l3.4-2.6c.6-.5 1 0 1 .5zm1.4-2.7c0-.9.7-1.3 1.4-1l3.6 1.5c.8.3.9 1.3.2 2L17 18.6c-.6.6-1.4.4-1.7-.4l-1.1-3.4v-.9zM10.7 13c.7 0 1.1-.5.6-1.4L5.6 1c-.3-.6-1.3-.4-1.7.7C2.4 5.5 2 9.6 2.6 11.4c.2.6.7 1 1.5 1l6.6.6zm.6 2.4c.6-.6.4-1.4-.4-1.5l-3.5-.7c-.9-.2-1.6.5-1.4 1.5l.5 3.7c.1 1 1 1.4 1.7.7l3.1-3.7z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="Happy HVAC Air Conditioning.html">Air Conditioning</a></li>
+          <li><a href="/heating-solutions/">Heating</a></li>
+          <li><a href="/indoor-air-quality-solutions/">Indoor Air Quality</a></li>
+          <li><a href="/plumbing-solutions/">Plumbing</a></li>
+          <li><a href="/electrical-solutions/">Electrical</a></li>
+          <li><a href="/commercial-hvac-r-in-atlanta-north-georgia/">Commercial HVAC-R</a></li>
+          <li><a href="/financing-options/">Financing Options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="Happy HVAC Atlanta.html">Atlanta, GA</a></li>
+          <li><a href="/hvac-marietta-ga/">Marietta, GA</a></li>
+          <li><a href="/hvac-alpharetta-ga/">Alpharetta, GA</a></li>
+          <li><a href="/hvac-roswell-ga/">Roswell, GA</a></li>
+          <li><a href="/hvac-kennesaw-ga/">Kennesaw, GA</a></li>
+          <li><a href="/hvac-woodstock-ga/">Woodstock, GA</a></li>
+          <li><a href="/hvac-sandy-springs-ga/">Sandy Springs, GA</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="Happy HVAC About.html">About Us</a></li>
+          <li><a href="Happy HVAC Testimonials.html">Reviews</a></li>
+          <li><a href="Happy HVAC Comfort Club.html">Comfort Club</a></li>
+          <li><a href="Happy HVAC Contact.html">Contact Us</a></li>
+          <li><a href="Happy HVAC Privacy Policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Happy HVAC Solutions &copy; <span id="year"></span>. All Rights Reserved. Serving Atlanta &amp; North Georgia.</p>
+      <div class="footer-bottom-links">
+        <a href="Happy HVAC Privacy Policy.html">Privacy Policy</a>
+        <a href="/terms-of-use/">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var toggle = document.querySelector('.mobile-toggle');
+    var nav = document.getElementById('primary-nav');
+    var backdrop = document.querySelector('.nav-backdrop');
+    if (!toggle || !nav) return;
+    function close() {
+      document.body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      if (navDropdown) navDropdown.classList.remove('open');
+    }
+    function open() {
+      document.body.classList.add('nav-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+    toggle.addEventListener('click', function() {
+      if (document.body.classList.contains('nav-open')) close();
+      else open();
+    });
+    if (backdrop) backdrop.addEventListener('click', close);
+    var dropdownLink = nav.querySelector('.nav-dropdown > a');
+    var navDropdown = nav.querySelector('.nav-dropdown');
+    if (dropdownLink && navDropdown) {
+      dropdownLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        navDropdown.classList.toggle('open');
+      });
+    }
+    nav.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A' && e.target.getAttribute('href') !== '#') close();
+    });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
+    window.addEventListener('resize', function() { if (window.innerWidth > 880) close(); });
+  })();
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
