@@ -143,19 +143,20 @@
   .logo { display: flex; align-items: center; }
   .logo img { height: 104px; width: 104px; object-fit: contain; display: block; }
 
-  nav { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+  nav { display: flex; align-items: center; gap: 4px; }
   nav a {
-    font-family: var(--font-body);
-    font-size: 14px;
+    padding: 10px 14px;
+    font-family: var(--font-display);
     font-weight: 600;
-    color: var(--gray-600);
-    padding: 8px 12px;
-    border-radius: var(--radius);
-    transition: color 0.15s, background 0.15s;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--gray-900);
+    transition: color 0.15s;
     white-space: nowrap;
   }
-  nav a:hover { color: var(--blue); background: var(--blue-light); }
-  nav a.active { color: var(--blue); }
+  nav a:hover { color: var(--orange); }
+  nav a.active { color: var(--orange); }
 
   .nav-dropdown { position: relative; }
   .nav-dropdown > a::after { content: ' ▾'; font-size: 10px; opacity: 0.6; }
